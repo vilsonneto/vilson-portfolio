@@ -14,6 +14,7 @@
   .body {
     @apply bg-purple-900;
     @apply text-gray-50;
+    padding-bottom: 300px;
   }
 
   .figure {
@@ -24,6 +25,14 @@
     right: 5vw;
     /* width: 392px; */
     width: 30vw;
+  }
+
+  #subtitle .line {
+    width: 65px;
+    height: 10px;
+    border-radius: 20px;
+    @apply bg-blueBaby-300;
+    margin: auto;
   }
 }
 

@@ -1,6 +1,7 @@
 import Card from "@/components/card";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { Subtitle } from "@/components/subtitle";
 import { projectData } from "@/schemas/project.schema";
 import apiGithub from "@/services/github";
 import { GetServerSideProps, NextPage } from "next";
@@ -24,6 +25,23 @@ const Home: NextPage<IHomeProps> = ({ projects }) => {
           return <Card key={project.id} project={project} />;
         })}
       </div>
+      <section>
+        <Subtitle text="Sobre mim" />
+        <p className="mb-24">
+          Aqui você encontrará mais informações sobre mim, o que faço e minhas
+          habilidades atuais principalmente em termos de programação e
+          tecnologia
+        </p>
+
+        <div className="flex">
+          <div className="w-1/2">
+            <h4>Me conheça!</h4>
+          </div>
+          <div className="w-1/2">
+            <h4>Minhas habilidades</h4>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
