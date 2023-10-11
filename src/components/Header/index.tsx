@@ -1,8 +1,12 @@
 import Image from "next/image";
 import style from "./style.module.css"
+import { Dispatch, SetStateAction } from "react";
 
+interface IHeaderProps {
+  setOpenContact: Dispatch<SetStateAction<boolean>>
+}
 
-export const Header = () => {
+export const Header = ({setOpenContact}: IHeaderProps) => {
   return (
     <header className={`h-28 w-full bg-blueBaby-300 flex flex-row justify-between font-bold ${style.text}`}>
       <div className={`h-full flex flex-row items-center gap-2 ml-9 `}>
@@ -20,7 +24,7 @@ export const Header = () => {
         <a href="">Home</a>
         <a href="">Sobre</a>
         <a href="">Projetos</a>
-        <a href="">Contatos</a>
+        <button onClick={() => setOpenContact(true)}>Contatos</button>
       </nav>
     </header>
   );

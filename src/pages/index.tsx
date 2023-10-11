@@ -8,6 +8,7 @@ import { projects } from "@/data/projects";
 import { projectData } from "@/schemas/project.schema";
 import apiGithub from "@/services/github";
 import { GetServerSideProps, NextPage } from "next";
+import React from "react";
 
 
 
@@ -16,12 +17,14 @@ interface IHomeProps {
 }
 
 const Home: NextPage<IHomeProps> = ({}) => {
+  const [openContact, setOpenContact] = React.useState(false);
+  
   return (
     <>
     <main
-      className={`body flex min-h-screen flex-col items-center justify-between ${source_code_pro.className} ${oswald.variable} blur-sm`}
+      className={`body flex min-h-screen flex-col items-center justify-between ${source_code_pro.className} ${oswald.variable} ${openContact && "blur-sm"}`}
       >
-      <Header />
+      <Header setOpenContact={setOpenContact}/>
       <Hero />
       <div
         className="flex  content-center gap-8 flex-wrap p-[70px]"
@@ -51,7 +54,7 @@ const Home: NextPage<IHomeProps> = ({}) => {
 
     </main>
     
-    <Contact/>
+    {openContact && <Contact setOpenContact={setOpenContact}/>}
     </>
   );
 };
