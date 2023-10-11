@@ -1,0 +1,36 @@
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../../../public/noise.png) 9px;
+    color: #FFF
+    
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../../../public/noise.png) 10px rgba(243, 242, 249, 0.44);
+}
+
+.set {
+    mix-blend-mode: lighten;
+}
+
+.exit {
+    font-size: 50px;
+    color: #FFF;
+
+    position: absolute;
+    top: 44px;
+    right: 11%;
+}
+
+.exit:hover {
+    font-weight: bold;
+}

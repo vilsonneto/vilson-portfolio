@@ -1,5 +1,6 @@
 import { source_code_pro, oswald } from "@/assets/fonts";
 import Card from "@/components/Card";
+import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Subtitle } from "@/components/Subtitle";
@@ -14,17 +15,18 @@ interface IHomeProps {
   // projects: projectData[];
 }
 
-const Home: NextPage<IHomeProps> = ({  }) => {
+const Home: NextPage<IHomeProps> = ({}) => {
   return (
+    <>
     <main
-      className={`body flex min-h-screen flex-col items-center justify-between ${source_code_pro.className} ${oswald.variable}`}
-    >
+      className={`body flex min-h-screen flex-col items-center justify-between ${source_code_pro.className} ${oswald.variable} blur-sm`}
+      >
       <Header />
       <Hero />
       <div
         className="flex  content-center gap-8 flex-wrap p-[70px]"
         // className="grid lg:grid-cols-2 md: grid-cols-2, sm:grid-cols-1 gap-12 justify-items-center"
-      >
+        >
         {projects.map((project) => {
           return <Card key={project.id} project={project} />;
         })}
@@ -46,7 +48,11 @@ const Home: NextPage<IHomeProps> = ({  }) => {
           </div>
         </div>
       </section>
+
     </main>
+    
+    <Contact/>
+    </>
   );
 };
 

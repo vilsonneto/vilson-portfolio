@@ -1,0 +1,12 @@
+.anchor {
+    border-bottom: 2px solid;
+    border-color: transparent;
+}
+
+.anchor:hover {
+    border-color: #fff;
+}
+
+.set {
+    mix-blend-mode: lighten;
+}
