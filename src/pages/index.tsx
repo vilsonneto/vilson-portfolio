@@ -1,24 +1,28 @@
-import Card from "@/components/card";
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
-import { Subtitle } from "@/components/subtitle";
+import { source_code_pro, oswald } from "@/assets/fonts";
+import Card from "@/components/Card";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Subtitle } from "@/components/Subtitle";
+import { projects } from "@/data/projects";
 import { projectData } from "@/schemas/project.schema";
 import apiGithub from "@/services/github";
 import { GetServerSideProps, NextPage } from "next";
 
+
+
 interface IHomeProps {
-  projects: projectData[];
+  // projects: projectData[];
 }
 
-const Home: NextPage<IHomeProps> = ({ projects }) => {
+const Home: NextPage<IHomeProps> = ({  }) => {
   return (
     <main
-      className={`body flex min-h-screen flex-col items-center justify-between `}
+      className={`body flex min-h-screen flex-col items-center justify-between ${source_code_pro.className} ${oswald.variable}`}
     >
       <Header />
       <Hero />
       <div
-        className="flex flex-col h-[220px] content-center gap-8 flex-wrap"
+        className="flex  content-center gap-8 flex-wrap p-[70px]"
         // className="grid lg:grid-cols-2 md: grid-cols-2, sm:grid-cols-1 gap-12 justify-items-center"
       >
         {projects.map((project) => {
@@ -27,7 +31,7 @@ const Home: NextPage<IHomeProps> = ({ projects }) => {
       </div>
       <section>
         <Subtitle text="Sobre mim" />
-        <p className="mb-24">
+        <p className="mb-24 text-center w-[828px] mt-[]">
           Aqui você encontrará mais informações sobre mim, o que faço e minhas
           habilidades atuais principalmente em termos de programação e
           tecnologia

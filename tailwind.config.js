@@ -27,8 +27,10 @@ module.exports = {
       fontFamily: {
         // sans: ["ui-sans-serif", "system-ui"],
         // serif: ["ui-serif", "Georgia"],
-        mono: ["Source Code Pro"],
-        display: ["Oswald"],
+        
+        // mono: ["Source Code Pro"],
+        // display: ["Oswald"],
+        
         // body: ['"Open Sans"'],
       },
     },

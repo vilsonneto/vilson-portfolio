@@ -1,9 +1,11 @@
 import Image from "next/image";
+import style from "./style.module.css"
+
 
 export const Header = () => {
   return (
-    <header className="h-28 w-full bg-blueBaby-300 flex flex-row justify-between  font-bold">
-      <div className="h-full flex flex-row items-center gap-2 ml-9">
+    <header className={`h-28 w-full bg-blueBaby-300 flex flex-row justify-between font-bold ${style.text}`}>
+      <div className={`h-full flex flex-row items-center gap-2 ml-9 `}>
         <Image
           className="w-14 h-14 rounded-full"
           src="/vilson.png"
