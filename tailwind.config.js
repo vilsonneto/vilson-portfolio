@@ -35,6 +35,12 @@ module.exports = {
         // body: ['"Open Sans"'],
       },
     },
+    screens: {
+      'sm': '320px',
+      'md': '960px',
+      'lg': '1200px',
+      
+    },
   },
   plugins: [],
 };

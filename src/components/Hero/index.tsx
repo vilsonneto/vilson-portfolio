@@ -1,12 +1,14 @@
 import { oswald } from "@/assets/fonts";
+import { Player } from "@lottiefiles/react-lottie-player";
 import Image from "next/image";
+import Animation from "../../../public/devAnimation.json"
 
 
 export const Hero = () => {
   return (
     <>
       <section className="min-h-[572px] relative ">
-        <div className="w-[60%] ml-24 mt-20 flex flex-col justify-center items-center">
+        <div className="w-[80%] lg:w-[60%] ml-24 mt-20 flex flex-col justify-center items-center">
           <h2 className={`font-bold text-[60px] mb-5 w-full ${oswald.className}`}>
             OLÁ, EU SOU VILSON PADILHA
           </h2>
@@ -22,12 +24,18 @@ export const Hero = () => {
             Explore meus projetos
           </button>
         </div>
-        <Image
+        {/* <Image
           className="figure"
           src="/figure.png"
           width={400}
           height={400}
           alt="Picture of the author"
+        /> */}
+        <Player
+          className="figure invisible lg:visible"
+          autoplay
+          loop
+          src={Animation}
         />
       </section>
       <div className="h-48 w-full bg-blueSerenate-200"></div>

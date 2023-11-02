@@ -18,8 +18,8 @@
   .figure {
     color: transparent;
     position: absolute;
-    /* bottom: -164px; */
-    bottom: -12.8vw;
+    /* top: 15vw; */
+    bottom: -10.8vw;
     right: 5vw;
     /* width: 392px; */
     width: 30vw;
