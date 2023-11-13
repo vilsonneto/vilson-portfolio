@@ -31,12 +31,12 @@ export const Hero = () => {
           height={400}
           alt="Picture of the author"
         /> */}
-        <Player
+        {/* <Player
           className="figure invisible lg:visible"
           autoplay
           loop
           src={Animation}
-        />
+        /> */}
       </section>
       <div className="h-48 w-full bg-blueSerenate-200"></div>
     </>
