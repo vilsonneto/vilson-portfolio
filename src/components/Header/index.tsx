@@ -21,9 +21,8 @@ export const Header = ({setOpenContact}: IHeaderProps) => {
       </div>
 
       <nav className="h-full flex flex-row items-center gap-5 mr-40">
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Projetos</a>
+        <a href="#aboutme">Sobre</a>
+        <a href="#projects">Projetos</a>
         <button onClick={() => setOpenContact(true)}>Contatos</button>
       </nav>
     </header>

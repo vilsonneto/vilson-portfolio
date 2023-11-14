@@ -11,7 +11,7 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
   const [stack, setStack] = useState("Front-end");
 
   return (
-    <section>
+    <section id="aboutme">
       <Subtitle text="Sobre mim" />
       <p className="mb-24 text-center w-[1000px]">
         Aqui você encontrará mais informações sobre mim, o que faço e minhas

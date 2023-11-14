@@ -20,9 +20,9 @@ export const Hero = () => {
             experiência em diferentes tecnologias.
           </p>
 
-          <button className="text-[24px] bg-blueBaby-300 w-fit px-5 py-[1.37rem] mt-10 mb-12 rounded-md ">
+          <a href="#projects" className="text-[24px] bg-blueBaby-300 w-fit px-5 py-[1.37rem] mt-10 mb-12 rounded-md ">
             Explore meus projetos
-          </button>
+          </a>
         </div>
         {/* <Image
           className="figure"

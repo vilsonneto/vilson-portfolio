@@ -6,7 +6,9 @@ export const projectSchema = z.object({
   description: z.string(),
   resume: z.string(),
   stack: z.array(z.string()),
-  image: z.string()
+  image: z.string(),
+  deploy: z.string(),
+  github: z.string()
 });
 
 
@@ -19,7 +21,9 @@ export const projects:projectData[] = [
         description: "Hub de currículos de programadores.",
         resume: "Aplicação que permite ao usuário expor as tecnologias que aprendeu e está aprendendo, como também seus projetos também.",
         stack: ["React", "Context API", "Styled Components"],
-        image: "https://i.imgur.com/ruBLRql.png"
+        image: "https://i.imgur.com/ruBLRql.png",
+        deploy: "https://devhubv.vercel.app/",
+        github: "https://github.com/vilsonneto/devhub"
     },
     {
         id: 2,
@@ -27,6 +31,8 @@ export const projects:projectData[] = [
         description: "Aplicação para achar eventos esportivos.",
         resume: "Aplicação que permite ao usuário encontrar diversas pessoas que praticam diferentes esportes em uma cidade específica.",
         stack: ["React", "Typescript", "Styled Components"],
-        image: "https://i.imgur.com/hFjrwVZ.png"
+        image: "https://i.imgur.com/hFjrwVZ.png",
+        deploy: "https://sport-find.vercel.app/",
+        github: "https://github.com/vilsonneto/sport-find"
     }
 ]
