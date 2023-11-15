@@ -100,11 +100,11 @@ export const tooling:toolingData[] = [
         title: "Python",
         type: ["Back-end"]
     },
-    {
-        id: 19,
-        title: "Python",
-        type: ["Back-end"]
-    },
+    // {
+    //     id: 19,
+    //     title: "Python",
+    //     type: ["Back-end"]
+    // },
     {
         id: 20,
         title: "Flask",
