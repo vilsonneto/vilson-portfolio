@@ -28,7 +28,7 @@ const Home: NextPage<IHomeProps> = ({}) => {
         <Header setOpenContact={setOpenContact} />
         <Hero />
         <AboutMe setOpenContact={setOpenContact} />
-        <section id="projects" className="pt-[60px] mt-[10px]">
+        <section id="projects" className="pt-5 mdpt-[60px] mt-[10px]">
           <Subtitle text="Projetos" />
           <div className="flex  content-center gap-8 flex-wrap p-[70px]">
             {projects.map((project) => {

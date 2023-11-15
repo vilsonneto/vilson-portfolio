@@ -1,3 +1,45 @@
 .text {
-    font-family: var(--font-oswald);
+  font-family: var(--font-oswald);
 }
+
+.textLink {
+    display: inline-block;
+  }
+  
+.icon {
+    display: none;
+    font-size: 25px;
+}
+
+@media (max-width: 960px) {
+  .navbar {
+    position: fixed;
+    z-index: 4;
+    bottom: 10px;
+
+    width: 80%;
+    margin-left: 10%;
+
+    display: flex;
+    justify-content: center;
+    color: rgb(90 123 184 / var(--tw-bg-opacity));
+  }
+
+  .navbar nav {
+    border-radius: 3px;
+
+    background-color: rgb(226 238 236 / var(--tw-bg-opacity));
+    padding: 15px 10px;
+  }
+
+  .textLink {
+    display: none;
+  }
+
+  .icon {
+    display: inline-block;
+    font-size: 25px;
+  }
+}
+
+

@@ -8,7 +8,7 @@ interface IInfoProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const Info = ({ title, content, ...props }: IInfoProps) => {
   return (
-    <div className="flex justify-around w-[100%] ">
+    <div className="flex justify-between md:justify-around w-[100%] ">
       <span>{title}</span>
       <a className={`${style.anchor}`} {...props }>
         <span className={`${style.set}`}>↗</span> {content}

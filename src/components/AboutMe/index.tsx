@@ -1,7 +1,7 @@
 import { Subtitle } from "../Subtitle";
 import { tooling } from "../../data/tooling";
 import { useState } from "react";
-import style from "./style.module.css"
+import style from "./style.module.css";
 
 interface IAboutMeProps {
   setOpenContact: React.Dispatch<React.SetStateAction<boolean>>;
@@ -11,15 +11,15 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
   const [stack, setStack] = useState("Front-end");
 
   return (
-    <section id="aboutme">
+    <section id="aboutme" className="pt-5 md:pt-[60px]">
       <Subtitle text="Sobre mim" />
-      <p className="mb-24 text-center w-[1000px]">
+      <p className="mb-24 text-center m-auto w-[95%] md:w-[900px]">
         Aqui você encontrará mais informações sobre mim, o que faço e minhas
         habilidades atuais principalmente em termos de programação e tecnologia.
       </p>
 
-      <div className="flex gap-10">
-        <div className="w-1/2 max-w-[511px]">
+      <div className="flex gap-10 flex-col md:flex-row">
+        <div className=" w-4/5 m-auto md:w-1/2 md:max-w-[500px]">
           <h4 className="text-[1.5rem] font-bold mb-[0.5rem]">Me conheça!</h4>
           <p className="mb-[1rem]">
             Sou um <strong>Desenvolvedor Full Stack</strong> Apaixonado por
@@ -69,37 +69,42 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
             Contato
           </button>
         </div>
-        <div className="w-1/2 max-w-[511px] relative">
+        <div className="w-4/5 md:w-1/2 md:max-w-[430px] h-[550px] m-auto md:m-[0] md:m-inherit relative">
           <h4 className="text-[1.5rem] font-bold mb-[0.5rem]">Ferramentas</h4>
 
           <div>
             <div className="relative">
               <button
-                className={`${style.btn} ${stack === "Front-end" ? style.on : style.off}`}
+                className={`${style.btn} ${
+                  stack === "Front-end" ? style.on : style.off
+                }`}
                 onClick={() => setStack("Front-end")}
               >
                 Front-end
               </button>
               <button
-                className={`${style.btn} ${stack === "Back-end" ? style.on : style.off}`}
-              
-              onClick={() => setStack("Back-end")}>Back-end</button>
+                className={`${style.btn} ${
+                  stack === "Back-end" ? style.on : style.off
+                }`}
+                onClick={() => setStack("Back-end")}
+              >
+                Back-end
+              </button>
             </div>
-            <div className={`${style.folder}`}>
-
-            <ul className=" flex content-center gap-5 flex-wrap pt-6">
-              {tooling.map(
-                (tool) =>
-                  tool.type.includes(stack) && (
-                    <li
-                      className="w-fit p-[5px] border-solid border-2 border-grey-300 rounded-md"
-                      key={tool.id}
-                    >
-                      {tool.title}
-                    </li>
-                  )
-              )}
-            </ul>
+            <div className={`${style.folder} max-w-[500px]`}>
+              <ul className=" flex content-center gap-5 flex-wrap pt-6">
+                {tooling.map(
+                  (tool) =>
+                    tool.type.includes(stack) && (
+                      <li
+                        className="w-fit p-[5px] border-solid border-2 border-grey-300 rounded-md"
+                        key={tool.id}
+                      >
+                        {tool.title}
+                      </li>
+                    )
+                )}
+              </ul>
             </div>
           </div>
         </div>

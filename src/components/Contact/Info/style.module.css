@@ -1,6 +1,7 @@
 .anchor {
     border-bottom: 2px solid;
     border-color: transparent;
+    min-width: 30px;
 }
 
 .anchor:hover {
