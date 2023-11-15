@@ -1,3 +1,22 @@
+@keyframes bg-transition-go {
+    from {
+        background-position-x: 10%;
+    }
+    to {
+        background-position-x: 100%;
+    }
+  }
+
+  @keyframes bg-transition-back {
+    from {
+        background-position-x: 100%;
+    }
+    to {
+        background-position-x: 10%;
+    }
+  }
+
+
 .bg {
     position: fixed;
     top: 0;
@@ -5,9 +24,11 @@
     left: 0;
     right: 0;
     background: url(../../../public/noise.png) 9px;
-    color: #FFF
+    color: #FFF;
+    animation: bg-transition-go 300ms infinite ;
     
 }
+
 
 .container {
     position: fixed;
@@ -16,6 +37,7 @@
     left: 0;
     right: 0;
     background: url(../../../public/noise.png) 10px rgba(243, 242, 249, 0.44);
+    animation: bg-transition-back 400ms infinite ;
 }
 
 .set {
