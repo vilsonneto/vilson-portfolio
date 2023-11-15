@@ -1,18 +1,23 @@
 @keyframes bg-transition-go {
     from {
         background-position-x: 10%;
+        background-position-y: 100%;
     }
     to {
         background-position-x: 100%;
+        background-position-y: 10%;
     }
   }
 
   @keyframes bg-transition-back {
     from {
-        background-position-x: 100%;
+        background-position-x: 90%;
+        background-position-y: 0%;
     }
     to {
-        background-position-x: 10%;
+        background-position-x: 0%;
+        background-position-y: 90%;
+
     }
   }
 
