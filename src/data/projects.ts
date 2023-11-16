@@ -32,7 +32,7 @@ export const projects:projectData[] = [
         resume: "Aplicação que permite ao usuário encontrar diversas pessoas que praticam diferentes esportes em uma cidade específica.",
         stack: ["React", "Typescript", "Styled Components"],
         image: "https://i.imgur.com/hFjrwVZ.png",
-        deploy: "https://sport-find.vercel.app/",
+        deploy: "https://sport-find-tau.vercel.app/",
         github: "https://github.com/vilsonneto/sport-find"
     }
 ]
