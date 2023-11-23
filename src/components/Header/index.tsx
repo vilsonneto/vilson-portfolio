@@ -17,7 +17,7 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
       <div className={`h-full flex flex-row items-center gap-2 ml-9 `}>
         <Image
           className="w-14 h-14 rounded-full"
-          src="/vilson.png"
+          src="/vilson.jpg"
           width={55}
           height={55}
           alt="Picture of the author"
