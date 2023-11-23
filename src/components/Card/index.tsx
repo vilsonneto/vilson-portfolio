@@ -15,7 +15,7 @@ const Card = ({ project }: ICardProps) => {
     >
       <Image
         src={`${project.image}`}
-        alt="Picture of the author"
+        alt={`Project ${project.title}`}
         width={448}
         height={274}
         objectFit="contain"
