@@ -34,10 +34,7 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta name="language" content="Portuguese" />
 
-        <meta
-          name="google-site-verification"
-          content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk"
-        />
+        <meta name="google-site-verification" content="iUbHbHYvVfmHeW-nHauAxx4h65_l2nqLQeyKeewuRBY" />
 
         <link rel="canonical" href="https://vilsonpadilha.vercel.app/" />
       </Head>
