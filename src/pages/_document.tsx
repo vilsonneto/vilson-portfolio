@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -34,9 +34,17 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta name="language" content="Portuguese" />
 
-        <meta name="google-site-verification" content="iUbHbHYvVfmHeW-nHauAxx4h65_l2nqLQeyKeewuRBY" />
+        <meta
+          name="google-site-verification"
+          content="iUbHbHYvVfmHeW-nHauAxx4h65_l2nqLQeyKeewuRBY"
+        />
 
         <link rel="canonical" href="https://vilsonpadilha.vercel.app/" />
+        <link
+          rel="icon"
+          href="/favicon.svg"
+          type="image/svg"
+        />
       </Head>
       <body>
         <Main />
