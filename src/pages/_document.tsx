@@ -1,9 +1,21 @@
+/* eslint-disable @next/next/inline-script-id */
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
     <Html lang="pt-Br">
       <Head>
+        <Script id="google-analytics-script" strategy="lazyOnload">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
+          page_path: window.location.pathname,
+          });
+    `}
+        </Script>
         <title>Vilson Padilha - Desenvolvedor Fullstack Web</title>
         <meta
           name="keywords"
@@ -40,11 +52,7 @@ export default function Document() {
         />
 
         <link rel="canonical" href="https://vilsonpadilha.vercel.app/" />
-        <link
-          rel="icon"
-          href="/favicon.svg"
-          type="image/svg"
-        />
+        <link rel="icon" href="/favicon.svg" type="image/svg" />
       </Head>
       <body>
         <Main />
