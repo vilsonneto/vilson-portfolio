@@ -50,4 +50,6 @@ const Card = ({ project }: ICardProps) => {
   );
 };
 
+Card.lazy = true;
+
 export default Card;
