@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  hsts: {
+    maxAge: 31536000,
+    includeSubdomains: true,
+  },
+  http2: true,
   reactStrictMode: true,
   images: {
     optimizeImages: true,
