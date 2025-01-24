@@ -37,6 +37,7 @@ const Home: NextPage<IHomeProps> = ({}) => {
           </div>
         </section>
       </main>
+      <div id="widget-container"></div>
 
       {openContact && <Contact setOpenContact={setOpenContact} />}
     </>
