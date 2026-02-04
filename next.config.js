@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  hsts: {
-    maxAge: 31536000,
-    includeSubdomains: true,
-  },
-  http2: true,
   reactStrictMode: true,
   images: {
-    optimizeImages: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,6 +11,19 @@ const nextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains'
+          }
+        ]
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
