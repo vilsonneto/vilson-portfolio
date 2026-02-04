@@ -18,7 +18,7 @@ const Card = ({ project }: ICardProps) => {
         alt={`Project ${project.title}`}
         width={448}
         height={274}
-        objectFit="contain"
+        style={{ objectFit: 'contain' }}
       />
       <div className={style.info}>
         <div className="ml-[10%] mr-[10%] mb-[13px] relative cursor-pointer">
