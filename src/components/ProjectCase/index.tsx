@@ -1,4 +1,4 @@
-import { projectData } from "@/data/projects";
+import { projectData } from "@/schemas/project.schema";
 import { oswald } from "@/assets/fonts";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -7,33 +7,48 @@ interface IProjectCaseProps {
 }
 
 export const ProjectCase = ({ project }: IProjectCaseProps) => {
+  const isCorporateProject = !project.github && !project.deploy;
+
   return (
     <article className="w-full max-w-[900px] m-auto mb-16 p-6 md:p-8 bg-gray-900/30 rounded-lg border border-gray-800">
       {/* Header */}
       <div className="flex justify-between items-start mb-6">
-        <h3 className={`text-[2rem] md:text-[2.5rem] font-bold ${oswald.className}`}>
-          {project.title}
-        </h3>
-        <div className="flex gap-4">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl hover:text-blueBaby-300 transition-colors"
-            aria-label="GitHub"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href={project.deploy}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl hover:text-blueBaby-300 transition-colors"
-            aria-label="Deploy"
-          >
-            <FaExternalLinkAlt />
-          </a>
+        <div className="flex-1">
+          <h3 className={`text-[2rem] md:text-[2.5rem] font-bold ${oswald.className}`}>
+            {project.title}
+          </h3>
+          {isCorporateProject && (
+            <p className="text-[0.85rem] opacity-60 mt-2">
+              Projeto corporativo — código proprietário
+            </p>
+          )}
         </div>
+        {!isCorporateProject && (
+          <div className="flex gap-4">
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blueBaby-300 transition-colors"
+                aria-label="GitHub"
+              >
+                <FaGithub />
+              </a>
+            )}
+            {project.deploy && (
+              <a
+                href={project.deploy}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blueBaby-300 transition-colors"
+                aria-label="Deploy"
+              >
+                <FaExternalLinkAlt />
+              </a>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Context */}
@@ -77,7 +92,7 @@ export const ProjectCase = ({ project }: IProjectCaseProps) => {
       </section>
 
       {/* Results */}
-      <section>
+      <section className={isCorporateProject ? "mb-6" : ""}>
         <h4 className="text-[1.25rem] font-bold mb-2 text-blueBaby-300">
           Resultados
         </h4>
@@ -90,6 +105,20 @@ export const ProjectCase = ({ project }: IProjectCaseProps) => {
           ))}
         </ul>
       </section>
+
+      {/* Corporate Project Disclaimer */}
+      {isCorporateProject && (
+        <section className="mt-6 pt-6 border-t border-gray-700/50">
+          <h4 className="text-[1.25rem] font-bold mb-2 text-blueBaby-300">
+            Nota de transparência
+          </h4>
+          <p className="text-[0.95rem] leading-relaxed opacity-75 italic">
+            Projeto desenvolvido em contexto corporativo. Este case descreve
+            exclusivamente minha contribuição técnica no frontend, sem exposição
+            de código proprietário, dados sensíveis ou decisões estratégicas internas.
+          </p>
+        </section>
+      )}
     </article>
   );
 };

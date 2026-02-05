@@ -74,5 +74,48 @@ export const projects:projectData[] = [
             "Aplicação responsiva e preparada para novos filtros e fluxos",
             "Interface alinhada ao objetivo do produto, sem sobrecarga visual"
         ]
+    },
+    {
+        id: 3,
+        title: "VersoChat",
+        description: "Plataforma de comunicação em tempo real corporativa.",
+        resume: "Sistema de chat em tempo real para atendimento e comunicação interna, com foco em estabilidade de conexão e gerenciamento de estado complexo.",
+        stack: ["Next.js", "React", "TypeScript", "Redux Toolkit", "WebSocket"],
+        image: "https://i.imgur.com/placeholder.png", // Placeholder - não usar imagem proprietária
+        deploy: "", // Sem deploy público - projeto corporativo
+        github: "", // Sem repositório público - código proprietário
+        context: "Aplicações de chat em produção enfrentam desafios técnicos específicos: instabilidade em conexões WebSocket, duplicação de mensagens, conflitos de estado entre múltiplas abas, e experiência inconsistente após falhas de rede. Esses problemas impactavam a confiança do usuário e a eficiência operacional.",
+        role: [
+            "Implementei arquitetura de cliente WebSocket centralizado com reconexão automática",
+            "Estruturei Redux Store modular para gerenciar estado complexo e sincronização em tempo real",
+            "Desenvolvi merge inteligente de mensagens para prevenir duplicatas entre API e WebSocket",
+            "Criei feedback visual consistente sobre estado de conexão e tratamento de cenários fora do happy path",
+            "Componentizei interface para reduzir duplicação e facilitar manutenção"
+        ],
+        technologies: [
+            {
+                name: "Next.js (App Router)",
+                reason: "SSR para performance inicial e SEO, arquitetura moderna para aplicação complexa"
+            },
+            {
+                name: "TypeScript + Redux Toolkit",
+                reason: "Previsibilidade de tipos e gerenciamento de estado complexo com sincronização em tempo real"
+            },
+            {
+                name: "WebSocket (Pusher)",
+                reason: "Comunicação bidirecional confiável com suporte a reconexão e subscrições de canais"
+            },
+            {
+                name: "Material UI",
+                reason: "Consistência visual, componentes acessíveis e produtividade no desenvolvimento"
+            }
+        ],
+        results: [
+            "Redução significativa de problemas de desconexão e duplicação de mensagens",
+            "Usuários sempre informados sobre estado da conexão, reduzindo dependência de suporte",
+            "Fluxo contínuo mesmo após refresh ou falhas temporárias de rede",
+            "Arquitetura modular que facilita expansão de funcionalidades em tempo real",
+            "Base de código mais legível e sustentável no longo prazo"
+        ]
     }
 ]
