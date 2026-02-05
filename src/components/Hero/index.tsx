@@ -13,10 +13,10 @@ export const Hero = () => {
             VILSON PADILHA
           </h2>
           <p className={`text-[20px] md:text-[24px] w-full`}>
-            Front-end Developer especializado em transformar requisitos de produto
-            em interfaces responsivas e performáticas. Otimizo métricas Core Web Vitals,
-            reduzo bundle size e garanto acessibilidade para entregar experiências
-            rápidas que convertem.
+            Frontend Developer especializado em <strong>aplicações B2B de alta complexidade</strong>.
+            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real e
+            cálculos de negócio críticos. <strong>1.258+ commits</strong> em 4 sistemas
+            em produção, promovido de Junior para Pleno em 6 meses.
           </p>
 
           <a href="#projects" className="md:text-[24px] bg-blueBaby-300 w-fit px-5 py-[1.37rem] mt-10 mb-12 rounded-md ">

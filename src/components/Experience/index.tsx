@@ -32,53 +32,65 @@ export const Experience = () => {
           </div>
 
           <p className="text-[1rem] leading-relaxed opacity-90 mb-6">
-            Atuo no desenvolvimento de plataformas web para SAC, Call Center e soluções B2B,
-            com foco em comunicação em tempo real e gerenciamento de estados complexos.
-            Trabalho com sistemas que exigem alta confiabilidade, sincronização entre
-            múltiplas fontes de dados e experiência consistente em cenários adversos.
+            Referência técnica em 4 plataformas B2B com <strong>1.258+ commits</strong> em produção.
+            Atuo em arquitetura frontend, aplicações em tempo real, cálculos fiscais complexos
+            e automação comercial. Promovido de Junior para Pleno em 6 meses.
           </p>
 
           <div className="space-y-3">
             <h4 className="text-[1.1rem] font-semibold mb-3 text-blueBaby-300">
-              Contribuições e impacto
+              Projetos e impacto
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-blueBaby-300 mr-3 mt-1 text-xl">•</span>
                 <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                  Implementei arquitetura de cliente WebSocket centralizado, reduzindo problemas
-                  de duplicação de mensagens e melhorando estabilidade de conexão em produção
+                  <strong>VersoChat (144 commits):</strong> Arquitetura WebSocket com reconexão
+                  automática, merge inteligente que eliminou 95% de duplicatas, sistema de
+                  notificações multi-camada e componentização que reduziu 30% de código duplicado
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blueBaby-300 mr-3 mt-1 text-xl">•</span>
                 <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                  Estruturei Redux Store modular para sincronização previsível entre API,
-                  WebSocket e interface, facilitando expansão de funcionalidades em tempo real
+                  <strong>VersoCommerce (333 commits):</strong> Motor de cálculos fiscais (ICMS,
+                  IPI, ST) com 95% de cobertura de testes, sistema de subcolaboradores com
+                  permissões granulares, PIX em tempo real e otimizações que melhoraram
+                  resposta em ~30%
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blueBaby-300 mr-3 mt-1 text-xl">•</span>
                 <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                  Desenvolvi merge inteligente de mensagens que previne duplicatas em cenários
-                  de concorrência, aumentando confiabilidade do sistema
+                  <strong>VersoADM (118 commits):</strong> Módulo de Comissão Dinâmica com
+                  wizard multi-step (~1.500 linhas), biblioteca de componentes que economizou
+                  ~500 linhas duplicadas, migração npm→Yarn em 75.000+ linhas
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blueBaby-300 mr-3 mt-1 text-xl">•</span>
                 <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                  Criei feedback visual consistente sobre estado de conexão e tratamento de
-                  cenários fora do happy path, reduzindo dependência de suporte técnico
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blueBaby-300 mr-3 mt-1 text-xl">•</span>
-                <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                  Promovido de Junior para Pleno em 6 meses, reconhecendo contribuições técnicas
-                  e impacto na arquitetura do produto
+                  <strong>Verso Apps (663 commits):</strong> Sistema de Automação de Agendas
+                  comerciais, calculadora de preços com regras complexas, dashboards analíticos
+                  e gestão de 54+ releases
                 </span>
               </li>
             </ul>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            <span className="px-3 py-1 bg-blueBaby-300/20 text-blueBaby-300 rounded-full text-[0.85rem]">
+              1.258+ commits
+            </span>
+            <span className="px-3 py-1 bg-blueBaby-300/20 text-blueBaby-300 rounded-full text-[0.85rem]">
+              54+ releases
+            </span>
+            <span className="px-3 py-1 bg-blueBaby-300/20 text-blueBaby-300 rounded-full text-[0.85rem]">
+              200+ bugs resolvidos
+            </span>
+            <span className="px-3 py-1 bg-blueBaby-300/20 text-blueBaby-300 rounded-full text-[0.85rem]">
+              95% cobertura de testes
+            </span>
           </div>
         </article>
 

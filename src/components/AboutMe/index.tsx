@@ -22,44 +22,39 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
         <div className=" w-4/5 m-auto md:w-1/2 md:max-w-[500px]">
           <h4 className="text-[1.5rem] font-bold mb-[0.5rem]">Me conheça!</h4>
           <p className="mb-[1rem]">
-            Sou um <strong>Desenvolvedor Full Stack</strong> Apaixonado por
-            Transformar Ideias em Código!
+            <strong>Desenvolvedor Frontend</strong> especializado em aplicações
+            B2B de alta complexidade, com foco em arquitetura, performance e
+            aplicações em tempo real.
           </p>
           <p className="mb-[1rem]">
-            💡 Minha jornada na programação começou de maneira inusitada,
-            enquanto atuava como bibliotecário, quando tive a visão de criar um
-            acervo digital para facilitar o acesso durante a pandemia. Essa
-            iniciativa, que demonstrou meu comprometimento com a inovação,
-            resultou na minha transição para o mundo da programação, um passo
-            que encarava com entusiasmo.
+            Minha trajetória é marcada por uma transição sólida: de bibliotecário
+            a instrutor que formou <strong>300+ desenvolvedores</strong>, até
+            desenvolvedor em produção. Essa jornada consolidou habilidades de
+            comunicação técnica, pensamento crítico e tomada de decisão.
           </p>
           <p className="mb-[1rem]">
-            🌐 Rapidamente percebi que a programação estava moldando o mundo e
-            decidi que queria fazer parte dessa revolução. Me apaixonei por
-            resolver desafios complexos e me empenhei em uma jornada intensiva
-            de um ano na <strong>Kenzie Academy Brasil</strong>, onde adquiri
-            conhecimento sólido em tecnologias <strong>Front End</strong> e{" "}
-            <strong>Back End</strong>.
+            Na <strong>Kenzie Academy Brasil</strong>, evoluí de monitor para
+            instrutor pleno, liderando turmas e criando projetos diariamente em
+            demonstrações ao vivo. Essa experiência me preparou para ambientes
+            de produção onde código impacta usuários reais.
           </p>
           <p className="mb-[1rem]">
-            🛠️ Minha caixa de ferramentas inclui HTML5, CSS3, JavaScript (ES6+),
-            Typescript, React, Node.js, Python (Django e Flask) e SQL. Estou
-            constantemente buscando novos desafios para aprimorar minhas
-            habilidades e criar soluções inovadoras.
+            Atualmente na <strong>Versotech</strong>, sou responsável por 4
+            sistemas em produção com <strong>1.258+ commits</strong>, incluindo
+            plataformas de chat em tempo real, e-commerce B2B com cálculos
+            fiscais complexos, e automação comercial. Fui promovido de Junior
+            para Pleno em 6 meses.
           </p>
           <p className="mb-[1rem]">
-            💼 Em setembro de 2022, dei um grande passo em minha jornada ao me
-            tornar instrutor. Minha habilidade em resolver problemas e minha
-            paixão por compartilhar conhecimento, desenvolvida durante o período
-            em que trabalhei como monitor, me permitiram orientar outros
-            aspirantes a desenvolvedores em sua busca por sucesso.
+            Trabalho principalmente com <strong>Next.js, React, TypeScript e
+            Redux</strong>, desenvolvendo interfaces robustas, fluxos complexos
+            de dados e soluções orientadas a produto. Possuo experiência prática
+            com WebSocket, testes automatizados (Jest, Cypress) e CI/CD.
           </p>
           <p className="mb-[34px]">
-            🌟 Estou determinado a continuar minha evolução como{" "}
-            <strong>desenvolvedor fullstack</strong>, aplicando minhas
-            habilidades para criar soluções que transformem a vida das pessoas.
-            Juntos, podemos construir um futuro digital mais brilhante e
-            inovador!
+            Busco desafios onde possa assumir responsabilidade técnica, construir
+            software de impacto real e contribuir para times que valorizam
+            qualidade, colaboração e crescimento sustentável.
           </p>
 
           <button
