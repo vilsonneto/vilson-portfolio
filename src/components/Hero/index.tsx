@@ -10,18 +10,17 @@ export const Hero = () => {
       <section className="min-h-[572px] relative ">
         <div className="md:w-[80%] lg:w-[60%] p-5 md:ml-24 mt-5 md:mt-20 flex flex-col justify-center items-center">
           <h2 className={`font-bold text-[30px] md:text-[60px] mb-5 w-full ${oswald.className}`}>
-            OLÁ, EU SOU VILSON PADILHA
+            VILSON PADILHA
           </h2>
           <p className={`text-[20px] md:text-[24px] w-full`}>
-          &#47;&#47; Sou um desenvolvedor Fullstack Web especializado em Front-end. Meu
-            objetivo é criar soluções elegantes, intuitivas e eficientes que
-            atendam às necessidades dos usuários. Neste portfólio, você
-            encontrará exemplos dos projetos que desenvolvi, demonstrando minha
-            experiência em diferentes tecnologias.
+            Front-end Developer especializado em transformar requisitos de produto
+            em interfaces responsivas e performáticas. Otimizo métricas Core Web Vitals,
+            reduzo bundle size e garanto acessibilidade para entregar experiências
+            rápidas que convertem.
           </p>
 
           <a href="#projects" className="md:text-[24px] bg-blueBaby-300 w-fit px-5 py-[1.37rem] mt-10 mb-12 rounded-md ">
-            Explore meus projetos
+            Ver projetos
           </a>
         </div>
         {/* <Image
