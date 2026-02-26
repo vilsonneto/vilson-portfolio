@@ -1,6 +1,5 @@
 'use client';
 import Image from "next/image";
-import Link from "next/link";
 import style from "./style.module.css";
 import { Dispatch, SetStateAction } from "react";
 import { FaCode, FaHome, FaLinkedin } from "react-icons/fa";
@@ -78,7 +77,7 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
 
       <div className={`${style.navbar} flex items-center`}>
         <AudioToggle className="mr-4 hidden md:block" />
-        <nav className="h-full flex flex-row items-center gap-10 md:gap-5 md:mr-40">
+        <nav className="h-full flex flex-row items-center gap-5 md:mr-40">
           <a href="#home" aria-label="Home" className={navLink('home')}>
             <span className={`${style.icon}`} aria-hidden="true"><FaHome /></span>
           </a>
