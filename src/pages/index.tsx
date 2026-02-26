@@ -1,6 +1,8 @@
 import { source_code_pro, oswald } from "@/assets/fonts";
 import { AboutMe } from "@/components/AboutMe";
+import { BackToTop } from "@/components/BackToTop";
 import { Contact } from "@/components/Contact";
+import { ContactCTA } from "@/components/ContactCTA";
 import { Experience } from "@/components/Experience";
 import { FloatingContact } from "@/components/FloatingContact";
 import { Header } from "@/components/Header";
@@ -74,8 +76,10 @@ const Home: NextPage = () => {
         <AboutMe setOpenContact={setOpenContact} />
         <HowIWork />
         <TechStack />
+        <ContactCTA setOpenContact={setOpenContact} />
       </main>
 
+      <BackToTop />
       <FloatingContact setOpenContact={setOpenContact} />
 
       <div id="widget-container"></div>
