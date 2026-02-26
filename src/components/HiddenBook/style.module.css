@@ -1,0 +1,139 @@
+.hiddenBook {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: all 0.3s ease;
+  z-index: 100;
+  color: #5A7BB8;
+}
+
+.hiddenBook:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  color: #00FFFF;
+}
+
+.hiddenBook.discovered {
+  opacity: 0.3;
+  color: #39FF14;
+}
+
+.hiddenBook.discovered:hover {
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+}
+
+.bookIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.sparkle {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Modal */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(17, 4, 39, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  background: linear-gradient(135deg, #0D0221 0%, #1A1A2E 100%);
+  border: 1px solid #5A7BB8;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: slideUp 0.5s ease;
+}
+
+.bookOpenIcon {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  color: #E2EEEC;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.author {
+  color: #5A7BB8;
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.closeBtn {
+  background: transparent;
+  border: 1px solid #5A7BB8;
+  color: #5A7BB8;
+  padding: 0.5rem 1.5rem;
+  font-family: 'Source Code Pro', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  background: rgba(90, 123, 184, 0.1);
+  box-shadow: 0 0 10px rgba(90, 123, 184, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile - esconder o easter egg em telas muito pequenas */
+@media (max-width: 600px) {
+  .hiddenBook {
+    bottom: 80px; /* Acima da navbar mobile */
+    right: 10px;
+    width: 32px;
+    height: 32px;
+  }
+}

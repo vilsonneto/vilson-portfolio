@@ -1,8 +1,16 @@
+'use client';
 import { oswald } from "@/assets/fonts";
-import { Player } from "@lottiefiles/react-lottie-player";
-import Image from "next/image";
-import Animation from "../../../public/devAnimation.json"
+import { GlitchText } from "@/components/effects/GlitchText";
+import { NeonButton } from "@/components/effects/NeonButton";
+import { TypingText } from "@/components/effects/TypingText";
+import dynamic from "next/dynamic";
+import Animation from "../../../public/devAnimation.json";
 
+// Dynamic import para evitar erro de SSR (document is not defined)
+const Player = dynamic(
+  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
+  { ssr: false }
+);
 
 export const Hero = () => {
   return (
@@ -10,33 +18,46 @@ export const Hero = () => {
       <section className="min-h-[572px] relative ">
         <div className="md:w-[80%] lg:w-[60%] p-5 md:ml-24 mt-5 md:mt-20 flex flex-col justify-center items-center">
           <h2 className={`font-bold text-[30px] md:text-[60px] mb-5 w-full ${oswald.className}`}>
-            OLÁ, EU SOU VILSON PADILHA
+            <GlitchText text="VILSON PADILHA" />
           </h2>
-          <p className={`text-[20px] md:text-[24px] w-full`}>
-          &#47;&#47; Sou um desenvolvedor Fullstack Web especializado em Front-end. Meu
-            objetivo é criar soluções elegantes, intuitivas e eficientes que
-            atendam às necessidades dos usuários. Neste portfólio, você
-            encontrará exemplos dos projetos que desenvolvi, demonstrando minha
-            experiência em diferentes tecnologias.
+
+          {/* Subtítulo com typing effect */}
+          <div className="w-full mb-4 font-mono text-neon-cyan text-sm md:text-base">
+            <span className="text-neon-green">{'>'}</span>{' '}
+            <TypingText
+              text="Frontend Developer // B2B Specialist // WebSocket Architect"
+              speed={40}
+              delay={500}
+            />
+          </div>
+
+          <p className={`text-[18px] md:text-[22px] w-full`}>
+            Especializado em <strong className="text-neon-cyan">aplicações B2B de alta complexidade</strong>.
+            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real e
+            cálculos de negócio críticos. <strong className="text-neon-green">1.258+ commits</strong> em 4 sistemas
+            em produção, promovido de Junior para Pleno em 6 meses.
           </p>
 
-          <a href="#projects" className="md:text-[24px] bg-blueBaby-300 w-fit px-5 py-[1.37rem] mt-10 mb-12 rounded-md ">
-            Explore meus projetos
-          </a>
+          <NeonButton
+            href="#projects"
+            color="cyan"
+            size="lg"
+            className="mt-10 mb-12"
+          >
+            Ver projetos
+          </NeonButton>
         </div>
-        {/* <Image
-          className="figure"
-          src="/figure.png"
-          width={400}
-          height={400}
-          alt="Picture of the author"
-        /> */}
-        {/* <Player
+
+        {/* Lottie Animation com glow neon */}
+        <Player
           className="figure invisible lg:visible"
           autoplay
           loop
           src={Animation}
-        /> */}
+          style={{
+            filter: 'drop-shadow(0 0 20px rgba(0, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(191, 0, 255, 0.2))',
+          }}
+        />
       </section>
       <div className="md:h-48 w-full bg-blueSerenate-200"></div>
     </>

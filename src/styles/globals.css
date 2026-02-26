@@ -1,3 +1,5 @@
+@import './cursor.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,6 +38,38 @@ html {
     @apply bg-blueBaby-300;
     margin: auto;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Ultra Cyber Mode gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ultra-cyber-active {
+  animation: gradientShift 3s ease infinite;
 }
 
 /* @media (prefers-color-scheme: dark) {
