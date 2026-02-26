@@ -18,5 +18,18 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "jest.config.ts",
+    "jest.setup.ts",
+    "playwright.config.ts",
+    "vitest.config.ts",
+    "vitest.shims.d.ts",
+    "src/__tests__/**",
+    "e2e/**",
+    "**/*.stories.ts",
+    "**/*.stories.tsx",
+    "src/stories/**",
+    ".storybook/**"
+  ]
 }
