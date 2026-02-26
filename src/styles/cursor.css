@@ -1,0 +1,52 @@
+/* Cursores customizados Cyberpunk */
+
+/* Aplica apenas em dispositivos com mouse preciso (desktop) */
+@media (pointer: fine) {
+  * {
+    cursor: url('/cursors/cursor-default.svg') 4 2, auto;
+  }
+
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  .cursor-pointer,
+  [onclick] {
+    cursor: url('/cursors/cursor-pointer.svg') 10 2, pointer;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  textarea,
+  [contenteditable="true"] {
+    cursor: text;
+  }
+
+  /* Desabilita cursor customizado para elementos de carregamento */
+  .loading,
+  [aria-busy="true"] {
+    cursor: wait;
+  }
+
+  /* Elementos desabilitados */
+  [disabled],
+  .disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* Fallback para mobile/touch - usa cursores padrão */
+@media (pointer: coarse) {
+  * {
+    cursor: auto;
+  }
+}
+
+/* Classe para forçar cursor padrão (útil para inputs específicos) */
+.cursor-default {
+  cursor: default !important;
+}
