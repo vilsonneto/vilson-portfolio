@@ -1,7 +1,10 @@
 import { source_code_pro, oswald } from "@/assets/fonts";
 import { AboutMe } from "@/components/AboutMe";
+import { BackToTop } from "@/components/BackToTop";
 import { Contact } from "@/components/Contact";
+import { ContactCTA } from "@/components/ContactCTA";
 import { Experience } from "@/components/Experience";
+import { FloatingContact } from "@/components/FloatingContact";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { HowIWork } from "@/components/HowIWork";
@@ -26,15 +29,11 @@ const Home: NextPage = () => {
       >
         <Header setOpenContact={setOpenContact} />
         <Hero />
-        <AboutMe setOpenContact={setOpenContact} />
-        <HowIWork />
-        <TechStack />
-        <Experience />
 
         {/* Seção de Projetos */}
         <section
           id="projects"
-          className="pt-10 md:pt-[80px] mt-[10px] scroll-mt-20 w-full"
+          className="pt-10 md:pt-[80px] mt-[10px] scroll-mt-20 md:scroll-mt-28 w-full"
         >
           <AnimateOnScroll animation="fadeIn">
             <div className="text-center mb-12">
@@ -72,7 +71,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+
+        <Experience />
+        <AboutMe setOpenContact={setOpenContact} />
+        <HowIWork />
+        <TechStack />
+        <ContactCTA setOpenContact={setOpenContact} />
       </main>
+
+      <BackToTop />
+      <FloatingContact setOpenContact={setOpenContact} />
 
       <div id="widget-container"></div>
 

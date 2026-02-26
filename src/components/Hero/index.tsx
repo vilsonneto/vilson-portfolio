@@ -1,5 +1,6 @@
 'use client';
 import { oswald } from "@/assets/fonts";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { GlitchText } from "@/components/effects/GlitchText";
 import { NeonButton } from "@/components/effects/NeonButton";
 import { TypingText } from "@/components/effects/TypingText";
@@ -33,19 +34,51 @@ export const Hero = () => {
 
           <p className={`text-[18px] md:text-[22px] w-full`}>
             Especializado em <strong className="text-neon-cyan">aplicações B2B de alta complexidade</strong>.
-            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real e
-            cálculos de negócio críticos. <strong className="text-neon-green">1.258+ commits</strong> em 4 sistemas
-            em produção, promovido de Junior para Pleno em 6 meses.
+            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real
+            e cálculos de negócio críticos em sistemas de missão crítica.
           </p>
 
-          <NeonButton
-            href="#projects"
-            color="cyan"
-            size="lg"
-            className="mt-10 mb-12"
-          >
-            Ver projetos
-          </NeonButton>
+          {/* Faixa de métricas */}
+          <div className="grid grid-cols-3 gap-4 md:gap-12 w-full mt-6">
+            <div className="flex flex-col">
+              <AnimatedCounter
+                value={1258}
+                suffix="+"
+                className="text-2xl md:text-3xl font-bold text-neon-cyan"
+              />
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">commits entregues</span>
+            </div>
+            <div className="flex flex-col">
+              <AnimatedCounter
+                value={4}
+                className="text-2xl md:text-3xl font-bold text-neon-purple"
+              />
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">sistemas em produção</span>
+            </div>
+            <div className="flex flex-col">
+              <AnimatedCounter
+                value={6}
+                suffix=" meses"
+                className="text-2xl md:text-3xl font-bold text-neon-green"
+              />
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">Junior → Pleno</span>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-4 mt-8 mb-12 w-full">
+            <NeonButton href="#projects" color="cyan" size="lg" className="w-full md:w-auto">
+              Ver projetos
+            </NeonButton>
+            <NeonButton
+              href="https://www.linkedin.com/in/vilson-padilha"
+              color="purple"
+              size="lg"
+              external
+              className="w-full md:w-auto"
+            >
+              LinkedIn
+            </NeonButton>
+          </div>
         </div>
 
         {/* Lottie Animation com glow neon */}

@@ -6,6 +6,7 @@ import { AudioProvider } from "@/contexts/AudioContext";
 import { ScanlineOverlay } from "@/components/effects/ScanlineOverlay";
 import { KonamiSecret } from "@/components/KonamiSecret";
 import { HiddenBook } from "@/components/HiddenBook";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { initConsoleEasterEggs, registerConsoleCommands } from "@/utils/consoleEasterEggs";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <AudioProvider>
+      <ScrollProgress />
       <ScanlineOverlay opacity={0.02} />
       <KonamiSecret />
       <HiddenBook />

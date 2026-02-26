@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { source_code_pro, oswald } from "@/assets/fonts";
+import { BackToTop } from "@/components/BackToTop";
 import { Header } from "@/components/Header";
 import { Contact } from "@/components/Contact";
 import { ProjectCase } from "@/components/ProjectCase";
@@ -154,6 +155,8 @@ const ProjectPage: NextPage<ProjectPageProps> = ({
           </div>
         </section>
       </main>
+
+      <BackToTop />
 
       {openContact && <Contact setOpenContact={setOpenContact} />}
     </>
