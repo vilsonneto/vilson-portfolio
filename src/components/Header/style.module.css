@@ -12,33 +12,9 @@
 }
 
 @media (max-width: 960px) {
+  /* Nav desktop oculta no mobile — substituída por menu hambúrguer */
   .navbar {
-    position: fixed;
-    z-index: 4;
-    bottom: 10px;
-
-    width: 80%;
-    margin-left: 10%;
-
-    display: flex;
-    justify-content: center;
-    color: rgb(90 123 184 / var(--tw-bg-opacity));
-  }
-
-  .navbar nav {
-    border-radius: 3px;
-
-    background-color: rgb(226 238 236 / var(--tw-bg-opacity));
-    padding: 15px 10px;
-  }
-
-  .textLink {
     display: none;
-  }
-
-  .icon {
-    display: inline-block;
-    font-size: 25px;
   }
 }
 
