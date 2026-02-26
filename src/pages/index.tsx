@@ -2,6 +2,7 @@ import { source_code_pro, oswald } from "@/assets/fonts";
 import { AboutMe } from "@/components/AboutMe";
 import { Contact } from "@/components/Contact";
 import { Experience } from "@/components/Experience";
+import { FloatingContact } from "@/components/FloatingContact";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { HowIWork } from "@/components/HowIWork";
@@ -74,6 +75,8 @@ const Home: NextPage = () => {
         <HowIWork />
         <TechStack />
       </main>
+
+      <FloatingContact setOpenContact={setOpenContact} />
 
       <div id="widget-container"></div>
 
