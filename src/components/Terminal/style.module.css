@@ -1,0 +1,137 @@
+.terminal {
+  background: #0D0221;
+  border: 1px solid #39FF14;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+}
+
+.header {
+  background: #1A1A2E;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #39FF14;
+}
+
+.buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.close {
+  background: #FF5F56;
+}
+
+.minimize {
+  background: #FFBD2E;
+}
+
+.maximize {
+  background: #27C93F;
+}
+
+.title {
+  color: #868E96;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body {
+  padding: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  color: #E2EEEC;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.prompt {
+  color: #39FF14;
+  font-weight: bold;
+}
+
+.command {
+  color: #00FFFF;
+}
+
+.output {
+  color: #E2EEEC;
+  padding-left: 1rem;
+  opacity: 0.9;
+}
+
+.comment {
+  color: #6272A4;
+  font-style: italic;
+}
+
+.commentSymbol {
+  color: #6272A4;
+}
+
+.error {
+  color: #FF5F56;
+  padding-left: 1rem;
+}
+
+.success {
+  color: #39FF14;
+  padding-left: 1rem;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  color: #39FF14;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Scrollbar customizada */
+.body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.body::-webkit-scrollbar-track {
+  background: #0D0221;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background: #39FF14;
+  border-radius: 4px;
+}
+
+.body::-webkit-scrollbar-thumb:hover {
+  background: #00FFFF;
+}
+
+/* Responsividade */
+@media (max-width: 960px) {
+  .terminal {
+    font-size: 12px;
+  }
+
+  .body {
+    padding: 10px;
+    min-height: 150px;
+  }
+}
