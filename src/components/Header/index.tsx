@@ -36,7 +36,7 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
   return (
     <header
       id="home"
-      className={`sticky top-0 z-50 h-28 w-full bg-blueBaby-300/95 backdrop-blur-md flex flex-row justify-between font-bold ${style.text} ${isActive ? 'ultra-cyber-active' : ''}`}
+      className={`sticky top-0 z-50 h-20 md:h-28 w-full bg-blueBaby-300/95 backdrop-blur-md flex flex-row justify-between font-bold ${style.text} ${isActive ? 'ultra-cyber-active' : ''}`}
       style={isActive ? {
         background: 'linear-gradient(90deg, #5A7BB8 0%, #BF00FF 50%, #5A7BB8 100%)',
         backgroundSize: '200% 100%',
@@ -45,7 +45,7 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
     >
       <div className={`h-full flex flex-row items-center gap-3 ml-9`}>
         <Image
-          className={`w-14 h-14 rounded-full transition-all duration-300 ${isActive ? 'shadow-neon-cyan' : ''}`}
+          className={`w-10 h-10 md:w-14 md:h-14 rounded-full transition-all duration-300 ${isActive ? 'shadow-neon-cyan' : ''}`}
           src="/vilson.jpg"
           width={55}
           height={55}
@@ -67,8 +67,8 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
               <span className="ml-2 text-xs text-neon-pink">⚡</span>
             )}
           </h1>
-          {/* Badge de disponibilidade */}
-          <span className="ml-3 flex items-center gap-1.5 text-xs text-neon-green font-normal">
+          {/* Badge de disponibilidade — oculto no mobile para economizar espaço */}
+          <span className="ml-3 hidden md:flex items-center gap-1.5 text-xs text-neon-green font-normal">
             <span className="w-1.5 h-1.5 rounded-full bg-neon-green animate-pulse" aria-hidden="true" />
             Disponível para projetos
           </span>
@@ -77,7 +77,7 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
 
       <div className={`${style.navbar} flex items-center`}>
         <AudioToggle className="mr-4 hidden md:block" />
-        <nav className="h-full flex flex-row items-center gap-5 md:mr-40">
+        <nav className="flex flex-row items-center gap-5 md:mr-40">
           <a href="#home" aria-label="Home" className={navLink('home')}>
             <span className={`${style.icon}`} aria-hidden="true"><FaHome /></span>
           </a>
