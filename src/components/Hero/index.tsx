@@ -34,16 +34,38 @@ export const Hero = () => {
 
           <p className={`text-[18px] md:text-[22px] w-full`}>
             Especializado em <strong className="text-neon-cyan">aplicações B2B de alta complexidade</strong>.
-            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real e
-            cálculos de negócio críticos.{' '}
-            <strong className="text-neon-green">
-              <AnimatedCounter value={1258} suffix="+ commits" />
-            </strong>{' '}
-            em 4 sistemas em produção, promovido de Junior para Pleno em{' '}
-            <strong className="text-neon-green">6 meses</strong>.
+            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real
+            e cálculos de negócio críticos em sistemas de missão crítica.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-10 mb-12">
+          {/* Faixa de métricas */}
+          <div className="flex gap-8 md:gap-12 w-full mt-6 flex-wrap">
+            <div className="flex flex-col">
+              <AnimatedCounter
+                value={1258}
+                suffix="+"
+                className="text-3xl font-bold text-neon-cyan"
+              />
+              <span className="text-xs opacity-60 mt-1 font-normal">commits entregues</span>
+            </div>
+            <div className="flex flex-col">
+              <AnimatedCounter
+                value={4}
+                className="text-3xl font-bold text-neon-purple"
+              />
+              <span className="text-xs opacity-60 mt-1 font-normal">sistemas em produção</span>
+            </div>
+            <div className="flex flex-col">
+              <AnimatedCounter
+                value={6}
+                suffix=" meses"
+                className="text-3xl font-bold text-neon-green"
+              />
+              <span className="text-xs opacity-60 mt-1 font-normal">Junior → Pleno</span>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-4 mt-8 mb-12">
             <NeonButton href="#projects" color="cyan" size="lg">
               Ver projetos
             </NeonButton>
