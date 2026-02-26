@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { GlitchText } from './index';
 
 const meta = {
@@ -166,6 +166,7 @@ export const Cyberpunk: Story = {
 
 // Múltiplos textos
 export const MultipleGlitches: Story = {
+  args: { text: 'MÚLTIPLOS GLITCHES' },
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       <GlitchText text="LINHA 1" color="cyan" as="h2" className="text-4xl" />
@@ -203,6 +204,7 @@ export const SpecialCharacters: Story = {
 
 // Galeria de cores
 export const ColorGallery: Story = {
+  args: { text: 'GALERIA DE CORES' },
   render: () => (
     <div
       style={{

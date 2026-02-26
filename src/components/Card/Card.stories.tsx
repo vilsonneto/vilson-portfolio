@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import Card from './index';
 import { projectData } from '@/schemas/project.schema';
 
@@ -15,13 +15,18 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const mockProject: projectData = {
+  id: 1,
   title: 'Portfolio Cyberpunk',
   description: 'Um portfolio moderno com tema cyberpunk, animações e efeitos visuais.',
+  resume: 'Portfolio interativo com tema cyberpunk, efeitos visuais e testes automatizados.',
   image: '/projects/portfolio.png',
   github: 'https://github.com/vilsonneto/vilson-portfolio',
   deploy: 'https://vilson-portfolio.vercel.app',
   stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Jest'],
-  tags: ['frontend', 'web'],
+  context: 'Projeto pessoal para demonstrar habilidades técnicas.',
+  role: ['Desenvolvimento frontend', 'Arquitetura de componentes'],
+  technologies: [{ name: 'Next.js', reason: 'Framework React com SSG/SSR' }],
+  results: ['Portfolio publicado em produção com CI/CD'],
 };
 
 export const Default: Story = {

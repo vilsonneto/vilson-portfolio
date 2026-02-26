@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { NeonButton } from './index';
 import { FaGithub, FaRocket, FaDownload, FaHeart } from 'react-icons/fa';
 
@@ -194,6 +194,7 @@ export const AsLink: Story = {
 
 // Grupo de botões
 export const ButtonGroup: Story = {
+  args: { children: 'Grupo de Botões' },
   render: () => (
     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
       <NeonButton color="pink">Cancel</NeonButton>
@@ -209,6 +210,7 @@ export const ButtonGroup: Story = {
 
 // Todas as cores juntas
 export const AllColors: Story = {
+  args: { children: 'Todas as Cores' },
   render: () => (
     <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
       <div style={{ display: 'flex', gap: '1rem' }}>
