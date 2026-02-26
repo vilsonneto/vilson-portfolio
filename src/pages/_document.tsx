@@ -23,33 +23,40 @@ export default function Document() {
           });
     `}
         </Script>
-        <title>Vilson Padilha - Desenvolvedor Fullstack Web</title>
+        <title>Vilson Padilha — Frontend Developer B2B</title>
         <meta
           name="keywords"
-          content="Desenvolvedor Fullstack, Front-end, Back-end, HTML5, CSS3, JavaScript, Typescript, React, Node.js, Python, Django, Flask, SQL"
+          content="Frontend Developer, React, TypeScript, Next.js, WebSocket, B2B, JavaScript, Node.js, Tailwind CSS, Vilson Padilha"
         />
         <meta name="author" content="Vilson Padilha" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Desenvolvedor Fullstack Web especializado em Front-end, apaixonado por transformar ideias em código. Explore meus projetos e conheça minha jornada na programação."
+          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.258+ commits em 4 sistemas em produção."
         />
-        {/* <meta name="image" content="[URL_DA_IMAGEM]" /> */}
 
+        {/* Open Graph */}
         <meta
           property="og:title"
-          content="Vilson Padilha - Desenvolvedor Fullstack Web"
+          content="Vilson Padilha — Frontend Developer B2B"
         />
         <meta property="og:site_name" content="Vilson Padilha Portfolio" />
         <meta
           property="og:description"
-          content="Desenvolvedor Fullstack Web especializado em Front-end, apaixonado por transformar ideias em código. Explore meus projetos e conheça minha jornada na programação."
+          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.258+ commits em 4 sistemas em produção."
         />
-        {/* <meta property="og:image" content="[URL_DA_IMAGEM]" /> */}
         <meta property="og:url" content="https://vilsonpadilha.vercel.app/" />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
 
-        {/* <meta name="twitter:image" content="[URL_DA_IMAGEM]" /> */}
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Vilson Padilha — Frontend Developer B2B" />
+        <meta
+          name="twitter:description"
+          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.258+ commits em produção."
+        />
+
         <meta name="robots" content="index, follow" />
         <meta name="language" content="Portuguese" />
 
