@@ -26,10 +26,6 @@ const Home: NextPage = () => {
       >
         <Header setOpenContact={setOpenContact} />
         <Hero />
-        <AboutMe setOpenContact={setOpenContact} />
-        <HowIWork />
-        <TechStack />
-        <Experience />
 
         {/* Seção de Projetos */}
         <section
@@ -72,6 +68,11 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+
+        <Experience />
+        <AboutMe setOpenContact={setOpenContact} />
+        <HowIWork />
+        <TechStack />
       </main>
 
       <div id="widget-container"></div>
