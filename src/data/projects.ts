@@ -204,47 +204,47 @@ export const projects:projectData[] = [
             "Automação de build reduzindo erros humanos em deploys"
         ]
     },
-    // {
-    //     id: 6,
-    //     title: "Verso Apps",
-    //     description: "Suite de automação comercial e call center.",
-    //     resume: "Conjunto de aplicações para automação de agendas comerciais, call center e SAC, com dashboards analíticos, calculadora de preços e gestão de releases.",
-    //     stack: ["React", "JavaScript", "Redux", "Recharts", "Material UI"],
-    //     image: "https://i.imgur.com/placeholder.png",
-    //     deploy: "",
-    //     github: "",
-    //     context: "Equipes comerciais precisavam de ferramentas para automatizar agendamento de visitas, calcular preços com regras complexas de desconto, e gerenciar atendimentos. O desafio era criar interfaces intuitivas para processos de negócio complexos, com dashboards que fornecessem visibilidade em tempo real.",
-    //     role: [
-    //         "Desenvolvi sistema completo de Automação de Agendas com formulário multi-step, gestão de capacidade de vendedores e dashboard analítico",
-    //         "Criei calculadora de preços com validações, sistema de descontos/promoções e cálculo de percentuais financeiros",
-    //         "Implementei checkout com condições de pagamento dinâmicas e recálculo automático",
-    //         "Construí dashboards com gráficos interativos (Recharts) e métricas em tempo real",
-    //         "Gerenciei 54+ releases (versões 2.88.9 → 2.96.5)"
-    //     ],
-    //     technologies: [
-    //         {
-    //             name: "React + Redux",
-    //             reason: "Estado centralizado para fluxos complexos de calculadora e checkout"
-    //         },
-    //         {
-    //             name: "Recharts",
-    //             reason: "Gráficos de pizza e métricas interativas para dashboards analíticos"
-    //         },
-    //         {
-    //             name: "React Hook Form",
-    //             reason: "Formulários multi-step com validação progressiva"
-    //         },
-    //         {
-    //             name: "Material UI",
-    //             reason: "Componentes consistentes e acessíveis para aplicações internas"
-    //         }
-    //     ],
-    //     results: [
-    //         "Sistema de automação desenvolvido em tempo recorde (100 commits em agosto/2025)",
-    //         "Calculadora de preços com todas as regras de negócio e validações",
-    //         "54+ releases gerenciadas com estabilidade em produção",
-    //         "Dashboards fornecem visibilidade em tempo real para gestão comercial",
-    //         "3º maior contribuidor do projeto com 663 commits"
-    //     ]
-    // }
+    {
+        id: 6,
+        title: "Verso Apps",
+        description: "Suite de automação comercial e call center.",
+        resume: "Conjunto de aplicações para automação de agendas comerciais, call center e SAC, com dashboards analíticos, calculadora de preços e gestão de releases.",
+        stack: ["React", "JavaScript", "Redux", "Recharts", "Material UI"],
+        image: "https://i.imgur.com/placeholder.png",
+        deploy: "",
+        github: "",
+        context: "Equipes comerciais precisavam de ferramentas para automatizar agendamento de visitas, calcular preços com regras complexas de desconto, e gerenciar atendimentos. O desafio era criar interfaces intuitivas para processos de negócio complexos, com dashboards que fornecessem visibilidade em tempo real.",
+        role: [
+            "Desenvolvi sistema completo de Automação de Agendas com formulário multi-step, gestão de capacidade de vendedores e dashboard analítico",
+            "Criei calculadora de preços com validações, sistema de descontos/promoções e cálculo de percentuais financeiros",
+            "Implementei checkout com condições de pagamento dinâmicas e recálculo automático",
+            "Construí dashboards com gráficos interativos (Recharts) e métricas em tempo real",
+            "Gerenciei 54+ releases (versões 2.88.9 → 2.96.5)"
+        ],
+        technologies: [
+            {
+                name: "React + Redux",
+                reason: "Estado centralizado para fluxos complexos de calculadora e checkout"
+            },
+            {
+                name: "Recharts",
+                reason: "Gráficos de pizza e métricas interativas para dashboards analíticos"
+            },
+            {
+                name: "React Hook Form",
+                reason: "Formulários multi-step com validação progressiva"
+            },
+            {
+                name: "Material UI",
+                reason: "Componentes consistentes e acessíveis para aplicações internas"
+            }
+        ],
+        results: [
+            "Sistema de automação desenvolvido em tempo recorde (100 commits em agosto/2025)",
+            "Calculadora de preços com todas as regras de negócio e validações",
+            "54+ releases gerenciadas com estabilidade em produção",
+            "Dashboards fornecem visibilidade em tempo real para gestão comercial",
+            "3º maior contribuidor do projeto com 663 commits"
+        ]
+    }
 ]
