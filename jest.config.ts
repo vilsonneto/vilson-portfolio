@@ -12,9 +12,12 @@ const config: Config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/e2e/'],
   collectCoverageFrom: [
     'src/**/*.{js,jsx,ts,tsx}',
     '!src/**/*.d.ts',
+    '!src/**/*.stories.{ts,tsx}',
+    '!src/stories/**',
     '!src/pages/_app.tsx',
     '!src/pages/_document.tsx',
     '!src/assets/**',

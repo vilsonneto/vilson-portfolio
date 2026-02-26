@@ -9,13 +9,18 @@ import Card from '@/components/Card';
 import { projectData } from '@/schemas/project.schema';
 
 const mockProject: projectData = {
+  id: 1,
   title: 'Test Project',
   description: 'A test project for accessibility',
+  resume: 'Test project resume',
   image: '/test-image.png',
   github: 'https://github.com/test/project',
   deploy: 'https://test-project.com',
   stack: ['React', 'TypeScript', 'Jest'],
-  tags: ['frontend'],
+  context: 'Test context',
+  role: ['Developer'],
+  technologies: [{ name: 'React', reason: 'UI framework' }],
+  results: ['Delivered on time'],
 };
 
 describe('Card - Accessibility Tests', () => {

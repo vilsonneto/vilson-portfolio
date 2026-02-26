@@ -6,6 +6,7 @@
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 import { Header } from '@/components/Header';
+import { AudioProvider } from '@/contexts/AudioContext';
 
 // Mock do hook useSound
 jest.mock('@/hooks/useSound', () => ({
@@ -27,7 +28,7 @@ describe('Header - Accessibility Tests', () => {
   const mockSetOpenContact = jest.fn();
 
   it('should not have accessibility violations', async () => {
-    const { container } = render(<Header setOpenContact={mockSetOpenContact} />);
+    const { container } = render(<AudioProvider><Header setOpenContact={mockSetOpenContact} /></AudioProvider>);
 
     // Executa análise de acessibilidade
     const results = await axe(container);
@@ -37,7 +38,7 @@ describe('Header - Accessibility Tests', () => {
   });
 
   it('should have proper navigation structure', () => {
-    const { container } = render(<Header setOpenContact={mockSetOpenContact} />);
+    const { container } = render(<AudioProvider><Header setOpenContact={mockSetOpenContact} /></AudioProvider>);
 
     // Verifica se existe um elemento <nav>
     const nav = container.querySelector('nav');
@@ -45,7 +46,7 @@ describe('Header - Accessibility Tests', () => {
   });
 
   it('should have accessible links', () => {
-    const { getAllByRole } = render(<Header setOpenContact={mockSetOpenContact} />);
+    const { getAllByRole } = render(<AudioProvider><Header setOpenContact={mockSetOpenContact} /></AudioProvider>);
 
     // Verifica se os links têm roles adequados
     const links = getAllByRole('link');

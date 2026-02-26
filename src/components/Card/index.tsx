@@ -27,6 +27,7 @@ const Card = ({ project }: ICardProps) => {
               href={project.github}
               target="_blank"
               className="hover:text-[#436db9]"
+              aria-label={`Ver ${project.title} no GitHub`}
             >
               <FaGithub className="absolute right-0 top-[-120%] text-2xl" />
             </a>

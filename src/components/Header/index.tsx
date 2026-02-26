@@ -65,20 +65,20 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
       <div className={`${style.navbar} flex items-center`}>
         <AudioToggle className="mr-4 hidden md:block" />
         <nav className="h-full flex flex-row items-center gap-10 md:gap-5 md:mr-40">
-          <a href="#home">
-            <span className={`${style.icon}`}><FaHome /></span>
+          <a href="#home" aria-label="Home">
+            <span className={`${style.icon}`} aria-hidden="true"><FaHome /></span>
           </a>
           <a href="#aboutme">
             <span className={`${style.textLink}`}>Sobre</span>
-            <span className={`${style.icon}`}><SiAboutdotme /></span>
+            <span className={`${style.icon}`} aria-hidden="true"><SiAboutdotme /></span>
           </a>
           <a href="#projects">
             <span className={`${style.textLink}`}>Projetos</span>
-            <span className={`${style.icon}`}><FaCode /></span>
+            <span className={`${style.icon}`} aria-hidden="true"><FaCode /></span>
           </a>
           <button onClick={() => setOpenContact(true)}>
             <span className={`${style.textLink}`}>Contatos</span>
-            <span className={`${style.icon}`}><IoIosContact /></span>
+            <span className={`${style.icon}`} aria-hidden="true"><IoIosContact /></span>
           </button>
         </nav>
       </div>
