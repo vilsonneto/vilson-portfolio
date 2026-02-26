@@ -1,5 +1,6 @@
 'use client';
 import { oswald } from "@/assets/fonts";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { GlitchText } from "@/components/effects/GlitchText";
 import { NeonButton } from "@/components/effects/NeonButton";
 import { TypingText } from "@/components/effects/TypingText";
@@ -34,18 +35,27 @@ export const Hero = () => {
           <p className={`text-[18px] md:text-[22px] w-full`}>
             Especializado em <strong className="text-neon-cyan">aplicações B2B de alta complexidade</strong>.
             Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real e
-            cálculos de negócio críticos. <strong className="text-neon-green">1.258+ commits</strong> em 4 sistemas
-            em produção, promovido de Junior para Pleno em 6 meses.
+            cálculos de negócio críticos.{' '}
+            <strong className="text-neon-green">
+              <AnimatedCounter value={1258} suffix="+ commits" />
+            </strong>{' '}
+            em 4 sistemas em produção, promovido de Junior para Pleno em{' '}
+            <strong className="text-neon-green">6 meses</strong>.
           </p>
 
-          <NeonButton
-            href="#projects"
-            color="cyan"
-            size="lg"
-            className="mt-10 mb-12"
-          >
-            Ver projetos
-          </NeonButton>
+          <div className="flex flex-wrap gap-4 mt-10 mb-12">
+            <NeonButton href="#projects" color="cyan" size="lg">
+              Ver projetos
+            </NeonButton>
+            <NeonButton
+              href="https://www.linkedin.com/in/vilson-padilha"
+              color="purple"
+              size="lg"
+              external
+            >
+              LinkedIn
+            </NeonButton>
+          </div>
         </div>
 
         {/* Lottie Animation com glow neon */}
