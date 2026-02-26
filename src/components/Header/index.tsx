@@ -9,14 +9,21 @@ import { IoIosContact } from "react-icons/io";
 import { AudioToggle } from "@/components/AudioToggle";
 import { useUltraCyberMode } from "@/hooks/useUltraCyberMode";
 import { useSoundEffect } from "@/hooks/useSound";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 interface IHeaderProps {
   setOpenContact: Dispatch<SetStateAction<boolean>>;
 }
 
+const SECTIONS = ['home', 'projects', 'experience', 'aboutme'];
+
 export const Header = ({ setOpenContact }: IHeaderProps) => {
   const { handleClick, isActive, progress } = useUltraCyberMode();
   const { playSound } = useSoundEffect();
+  const activeSection = useActiveSection(SECTIONS);
+
+  const navLink = (section: string) =>
+    `transition-all duration-200 ${activeSection === section ? 'opacity-100 border-b-2 border-neon-cyan text-neon-cyan' : 'opacity-70 hover:opacity-100'}`;
 
   const handleNameClick = () => {
     handleClick();
@@ -72,14 +79,14 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
       <div className={`${style.navbar} flex items-center`}>
         <AudioToggle className="mr-4 hidden md:block" />
         <nav className="h-full flex flex-row items-center gap-10 md:gap-5 md:mr-40">
-          <a href="#home" aria-label="Home">
+          <a href="#home" aria-label="Home" className={navLink('home')}>
             <span className={`${style.icon}`} aria-hidden="true"><FaHome /></span>
           </a>
-          <a href="#aboutme">
+          <a href="#aboutme" className={navLink('aboutme')}>
             <span className={`${style.textLink}`}>Sobre</span>
             <span className={`${style.icon}`} aria-hidden="true"><SiAboutdotme /></span>
           </a>
-          <a href="#projects">
+          <a href="#projects" className={navLink('projects')}>
             <span className={`${style.textLink}`}>Projetos</span>
             <span className={`${style.icon}`} aria-hidden="true"><FaCode /></span>
           </a>
@@ -88,11 +95,12 @@ export const Header = ({ setOpenContact }: IHeaderProps) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Perfil no LinkedIn"
+            className="opacity-70 hover:opacity-100 transition-opacity duration-200"
           >
             <span className={`${style.textLink}`}>LinkedIn</span>
             <span className={`${style.icon}`} aria-hidden="true"><FaLinkedin /></span>
           </a>
-          <button onClick={() => setOpenContact(true)}>
+          <button onClick={() => setOpenContact(true)} className="opacity-70 hover:opacity-100 transition-opacity duration-200">
             <span className={`${style.textLink}`}>Contatos</span>
             <span className={`${style.icon}`} aria-hidden="true"><IoIosContact /></span>
           </button>
