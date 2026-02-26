@@ -1,4 +1,4 @@
-import { projectData } from "@/data/projects";
+import { projectData } from "@/schemas/project.schema";
 import Image from "next/image";
 import style from "./style.module.css";
 import { oswald } from "@/assets/fonts";
