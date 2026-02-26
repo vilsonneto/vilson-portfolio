@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         {/* Seção de Projetos */}
         <section
           id="projects"
-          className="pt-10 md:pt-[80px] mt-[10px] scroll-mt-20 w-full"
+          className="pt-10 md:pt-[80px] mt-[10px] scroll-mt-20 md:scroll-mt-28 w-full"
         >
           <AnimateOnScroll animation="fadeIn">
             <div className="text-center mb-12">

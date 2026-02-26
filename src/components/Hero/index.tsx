@@ -39,34 +39,34 @@ export const Hero = () => {
           </p>
 
           {/* Faixa de métricas */}
-          <div className="flex gap-8 md:gap-12 w-full mt-6 flex-wrap">
+          <div className="grid grid-cols-3 gap-4 md:gap-12 w-full mt-6">
             <div className="flex flex-col">
               <AnimatedCounter
                 value={1258}
                 suffix="+"
-                className="text-3xl font-bold text-neon-cyan"
+                className="text-2xl md:text-3xl font-bold text-neon-cyan"
               />
-              <span className="text-xs opacity-60 mt-1 font-normal">commits entregues</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">commits entregues</span>
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
                 value={4}
-                className="text-3xl font-bold text-neon-purple"
+                className="text-2xl md:text-3xl font-bold text-neon-purple"
               />
-              <span className="text-xs opacity-60 mt-1 font-normal">sistemas em produção</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">sistemas em produção</span>
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
                 value={6}
                 suffix=" meses"
-                className="text-3xl font-bold text-neon-green"
+                className="text-2xl md:text-3xl font-bold text-neon-green"
               />
-              <span className="text-xs opacity-60 mt-1 font-normal">Junior → Pleno</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">Junior → Pleno</span>
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-4 mt-8 mb-12">
-            <NeonButton href="#projects" color="cyan" size="lg">
+          <div className="flex flex-col md:flex-row gap-4 mt-8 mb-12 w-full">
+            <NeonButton href="#projects" color="cyan" size="lg" className="w-full md:w-auto">
               Ver projetos
             </NeonButton>
             <NeonButton
@@ -74,6 +74,7 @@ export const Hero = () => {
               color="purple"
               size="lg"
               external
+              className="w-full md:w-auto"
             >
               LinkedIn
             </NeonButton>

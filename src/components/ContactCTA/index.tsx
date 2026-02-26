@@ -12,7 +12,7 @@ export const ContactCTA = ({ setOpenContact }: ContactCTAProps) => {
   return (
     <section
       id="contact-cta"
-      className="w-full py-20 px-5 md:px-[70px] scroll-mt-28"
+      className="w-full pt-16 pb-28 md:py-20 px-5 md:px-[70px] scroll-mt-20"
       style={{
         background: 'linear-gradient(180deg, transparent 0%, rgba(0,255,255,0.03) 50%, transparent 100%)',
       }}
@@ -44,8 +44,8 @@ export const ContactCTA = ({ setOpenContact }: ContactCTAProps) => {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
-            <NeonButton color="cyan" size="lg" onClick={() => setOpenContact(true)}>
+          <div className="flex flex-col md:flex-row justify-center gap-4 mb-10">
+            <NeonButton color="cyan" size="lg" onClick={() => setOpenContact(true)} className="w-full md:w-auto">
               Fale comigo
             </NeonButton>
             <NeonButton
@@ -53,6 +53,7 @@ export const ContactCTA = ({ setOpenContact }: ContactCTAProps) => {
               color="purple"
               size="lg"
               external
+              className="w-full md:w-auto"
             >
               <FaLinkedin aria-hidden="true" />
               LinkedIn
