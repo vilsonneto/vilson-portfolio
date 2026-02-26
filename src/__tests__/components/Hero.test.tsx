@@ -40,9 +40,9 @@ describe('Hero', () => {
 
   it('should highlight key information', () => {
     renderWithAudioProvider(<Hero />);
-    expect(
-      screen.getByText(/1\.258\+ commits/i)
-    ).toBeInTheDocument();
+    // O número e o label ficam em spans separados no AnimatedCounter
+    expect(screen.getByText(/commits entregues/i)).toBeInTheDocument();
+    expect(screen.getByText(/sistemas em produção/i)).toBeInTheDocument();
   });
 
   it('should render "Ver projetos" CTA button', () => {
@@ -79,8 +79,6 @@ describe('Hero', () => {
 
   it('should mention career progression', () => {
     renderWithAudioProvider(<Hero />);
-    expect(
-      screen.getByText(/promovido de Junior para Pleno em 6 meses/i)
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Junior → Pleno/i)).toBeInTheDocument();
   });
 });
