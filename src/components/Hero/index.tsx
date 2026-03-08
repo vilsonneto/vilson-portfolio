@@ -42,25 +42,27 @@ export const Hero = () => {
           <div className="grid grid-cols-3 gap-4 md:gap-12 w-full mt-6">
             <div className="flex flex-col">
               <AnimatedCounter
-                value={1258}
+                value={300}
                 suffix="+"
                 className="text-2xl md:text-3xl font-bold text-neon-cyan"
               />
-              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">commits em 1.5 ano</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">devs formados como instrutor</span>
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
-                value={4}
+                value={95}
+                suffix="%"
                 className="text-2xl md:text-3xl font-bold text-neon-purple"
               />
-              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">plataformas B2B</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">cobertura em cálculos fiscais</span>
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
-                value={1}
+                value={54}
+                suffix="+"
                 className="text-2xl md:text-3xl font-bold text-neon-green"
               />
-              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">lib npm publicada</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">releases em produção</span>
             </div>
           </div>
 
