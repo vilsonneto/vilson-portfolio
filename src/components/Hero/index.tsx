@@ -26,7 +26,7 @@ export const Hero = () => {
           <div className="w-full mb-4 font-mono text-neon-cyan text-sm md:text-base">
             <span className="text-neon-green">{'>'}</span>{' '}
             <TypingText
-              text="Frontend Developer // B2B Specialist // WebSocket Architect"
+              text="Frontend Developer // B2B Specialist // Real-time Applications"
               speed={40}
               delay={500}
             />
@@ -34,7 +34,7 @@ export const Hero = () => {
 
           <p className={`text-[18px] md:text-[22px] w-full`}>
             Especializado em <strong className="text-neon-cyan">aplicações B2B de alta complexidade</strong>.
-            Atuo com arquitetura WebSocket, gerenciamento de estado em tempo real
+            Atuo com comunicação em tempo real, gerenciamento de estado complexo
             e cálculos de negócio críticos em sistemas de missão crítica.
           </p>
 
@@ -46,22 +46,21 @@ export const Hero = () => {
                 suffix="+"
                 className="text-2xl md:text-3xl font-bold text-neon-cyan"
               />
-              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">commits entregues</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">commits em 1.5 ano</span>
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
                 value={4}
                 className="text-2xl md:text-3xl font-bold text-neon-purple"
               />
-              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">sistemas em produção</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">plataformas B2B</span>
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
-                value={6}
-                suffix=" meses"
+                value={1}
                 className="text-2xl md:text-3xl font-bold text-neon-green"
               />
-              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">Junior → Pleno</span>
+              <span className="text-[10px] md:text-xs opacity-60 mt-1 font-normal">lib npm publicada</span>
             </div>
           </div>
 

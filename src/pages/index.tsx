@@ -7,10 +7,8 @@ import { Experience } from "@/components/Experience";
 import { FloatingContact } from "@/components/FloatingContact";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { HowIWork } from "@/components/HowIWork";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Subtitle } from "@/components/Subtitle";
-import { TechStack } from "@/components/TechStack";
 import { projects } from "@/data/projects";
 import { AnimateOnScroll } from "@/components/effects/AnimateOnScroll";
 import { NextPage } from "next";
@@ -74,8 +72,6 @@ const Home: NextPage = () => {
 
         <Experience />
         <AboutMe setOpenContact={setOpenContact} />
-        <HowIWork />
-        <TechStack />
         <ContactCTA setOpenContact={setOpenContact} />
       </main>
 

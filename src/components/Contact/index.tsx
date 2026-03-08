@@ -20,7 +20,7 @@ export const Contact = ({setOpenContact}: IContactProps) => {
               <Info title="E-MAIL" content="vilson.neto57@gmail.com" href="mailto:vilson.neto57@gmail.com" />
             </div>
             <div className="md:w-1/2">
-              <Info title="REDES" content="linkedin" href="https://www.linkedin.com/in/vilson-neto/" target="_blank" />
+              <Info title="REDES" content="linkedin" href="https://www.linkedin.com/in/vilson-padilha" target="_blank" />
               <Info title="SOCIAIS" content="github" href="https://github.com/vilsonneto" target="_blank" />
             </div>
           </div>

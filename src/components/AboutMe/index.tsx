@@ -17,49 +17,22 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
     <section id="aboutme" className="pt-5 md:pt-[60px]">
       <AnimateOnScroll animation="fadeIn">
         <Subtitle text="Sobre mim" />
-        <p className="mb-24 text-center m-auto w-[95%] md:w-[900px]">
-          Aqui você encontrará mais informações sobre mim, o que faço e minhas
-          habilidades atuais principalmente em termos de programação e tecnologia.
-        </p>
       </AnimateOnScroll>
 
       <div className="flex gap-10 flex-col md:flex-row">
         <AnimateOnScroll animation="slideRight" delay={100} className="w-4/5 m-auto md:w-1/2 md:max-w-[500px]">
           <h4 className="text-[1.5rem] font-bold mb-[0.5rem]">Me conheça!</h4>
           <p className="mb-[1rem]">
-            <strong className="text-neon-cyan">Desenvolvedor Frontend</strong> especializado em aplicações
-            B2B de alta complexidade, com foco em arquitetura, performance e
-            aplicações em tempo real.
-          </p>
-          <p className="mb-[1rem]">
-            Minha trajetória é marcada por uma transição sólida: de bibliotecário
-            a instrutor que formou <strong className="text-neon-green">300+ desenvolvedores</strong>, até
-            desenvolvedor em produção. Essa jornada consolidou habilidades de
-            comunicação técnica, pensamento crítico e tomada de decisão.
-          </p>
-          <p className="mb-[1rem]">
-            Na <strong>Kenzie Academy Brasil</strong>, evoluí de monitor para
-            instrutor pleno, liderando turmas e criando projetos diariamente em
-            demonstrações ao vivo. Essa experiência me preparou para ambientes
-            de produção onde código impacta usuários reais.
-          </p>
-          <p className="mb-[1rem]">
-            Atualmente na <strong>Versotech</strong>, sou responsável por 4
-            sistemas em produção com <strong className="text-neon-green">1.258+ commits</strong>, incluindo
-            plataformas de chat em tempo real, e-commerce B2B com cálculos
-            fiscais complexos, e automação comercial. Fui promovido de Junior
-            para Pleno em 6 meses.
-          </p>
-          <p className="mb-[1rem]">
-            Trabalho principalmente com <strong className="text-neon-cyan">Next.js, React, TypeScript e
-            Redux</strong>, desenvolvendo interfaces robustas, fluxos complexos
-            de dados e soluções orientadas a produto. Possuo experiência prática
-            com WebSocket, testes automatizados (Jest, Cypress) e CI/CD.
+            Minha trajetória tem uma transição incomum: de <strong className="text-neon-cyan">bibliotecário</strong> a
+            instrutor que formou <strong className="text-neon-green">300+ desenvolvedores</strong> na Kenzie Academy,
+            até desenvolvedor frontend em produção. Essa jornada consolidou comunicação
+            técnica, pensamento crítico e autonomia para assumir responsabilidade
+            sobre sistemas de missão crítica.
           </p>
           <p className="mb-[34px]">
-            Busco desafios onde possa assumir responsabilidade técnica, construir
-            software de impacto real e contribuir para times que valorizam
-            qualidade, colaboração e crescimento sustentável.
+            Fora do trabalho corporativo, mantenho a <strong className="text-neon-cyan">tributos-br</strong> — uma
+            biblioteca npm open-source para cálculos fiscais brasileiros com precisão
+            decimal arbitrária, zero dependências e 95% de cobertura de testes.
           </p>
 
           <NeonButton
