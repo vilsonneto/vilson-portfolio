@@ -37,9 +37,9 @@ export const Experience = () => {
             </div>
 
             <p className="text-[1rem] leading-relaxed opacity-90 mb-6">
-              Referência técnica em 4 plataformas B2B com <strong className="text-neon-green">1.258+ commits</strong> em produção.
-              Atuo em arquitetura frontend, aplicações em tempo real, cálculos fiscais complexos
-              e automação comercial. Promovido de Junior para Pleno em 6 meses.
+              Referência técnica em 4 plataformas B2B. Atuo em arquitetura frontend,
+              aplicações em tempo real, cálculos fiscais complexos e automação comercial.
+              Promovido de Junior para Pleno em 6 meses.
             </p>
 
             <div className="space-y-3">
@@ -84,17 +84,11 @@ export const Experience = () => {
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-neon-green/20 text-neon-green rounded-full text-[0.85rem] border border-neon-green/30">
-                1.258+ commits
-              </span>
               <span className="px-3 py-1 bg-neon-cyan/20 text-neon-cyan rounded-full text-[0.85rem] border border-neon-cyan/30">
-                54+ releases
-              </span>
-              <span className="px-3 py-1 bg-neon-pink/20 text-neon-pink rounded-full text-[0.85rem] border border-neon-pink/30">
-                200+ bugs resolvidos
+                54+ releases gerenciadas
               </span>
               <span className="px-3 py-1 bg-neon-purple/20 text-neon-purple rounded-full text-[0.85rem] border border-neon-purple/30">
-                95% cobertura de testes
+                95% cobertura em cálculos fiscais
               </span>
             </div>
           </article>
