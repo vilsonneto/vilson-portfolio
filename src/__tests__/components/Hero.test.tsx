@@ -41,8 +41,9 @@ describe('Hero', () => {
   it('should highlight key information', () => {
     renderWithAudioProvider(<Hero />);
     // O número e o label ficam em spans separados no AnimatedCounter
-    expect(screen.getByText(/commits entregues/i)).toBeInTheDocument();
-    expect(screen.getByText(/sistemas em produção/i)).toBeInTheDocument();
+    expect(screen.getByText(/devs formados como instrutor/i)).toBeInTheDocument();
+    expect(screen.getByText(/cobertura em cálculos fiscais/i)).toBeInTheDocument();
+    expect(screen.getByText(/releases em produção/i)).toBeInTheDocument();
   });
 
   it('should render "Ver projetos" CTA button', () => {
@@ -67,18 +68,13 @@ describe('Hero', () => {
     expect(screen.getByText('>')).toBeInTheDocument();
   });
 
-  it('should mention key technologies and skills', () => {
+  it('should mention key skills in description', () => {
     renderWithAudioProvider(<Hero />);
     expect(
-      screen.getByText(/WebSocket/i)
+      screen.getByText(/aplicações B2B de alta complexidade/i)
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/gerenciamento de estado em tempo real/i)
+      screen.getByText(/comunicação em tempo real/i)
     ).toBeInTheDocument();
-  });
-
-  it('should mention career progression', () => {
-    renderWithAudioProvider(<Hero />);
-    expect(screen.getByText(/Junior → Pleno/i)).toBeInTheDocument();
   });
 });

@@ -50,34 +50,32 @@ export const Experience = () => {
                 <li className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1 text-xl">•</span>
                   <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                    <strong>VersoChat (144 commits):</strong> Arquitetura WebSocket com reconexão
-                    automática, merge inteligente que eliminou 95% de duplicatas, sistema de
-                    notificações multi-camada e componentização que reduziu 30% de código duplicado
+                    <strong>VersoChat:</strong> Arquitetura WebSocket com reconexão automática,
+                    merge inteligente que eliminou 95% de duplicatas entre API e canal em tempo real,
+                    sistema de notificações multi-camada e componentização que reduziu 30% de código duplicado
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1 text-xl">•</span>
                   <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                    <strong>VersoCommerce (333 commits):</strong> Motor de cálculos fiscais (ICMS,
-                    IPI, ST) com 95% de cobertura de testes, sistema de subcolaboradores com
-                    permissões granulares, PIX em tempo real e otimizações que melhoraram
-                    resposta em ~30%
+                    <strong>VersoCommerce:</strong> Motor de cálculos fiscais (ICMS, IPI, ST) com
+                    95% de cobertura de testes, sistema de subcolaboradores com permissões granulares
+                    e integração PIX com validação em tempo real
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1 text-xl">•</span>
                   <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                    <strong>VersoADM (118 commits):</strong> Módulo de Comissão Dinâmica com
-                    wizard multi-step (~1.500 linhas), biblioteca de componentes que economizou
-                    ~500 linhas duplicadas, migração npm→Yarn em 75.000+ linhas
+                    <strong>VersoADM:</strong> Módulo de Comissão Dinâmica com wizard multi-step,
+                    biblioteca de componentes reutilizáveis que economizou ~500 linhas duplicadas
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1 text-xl">•</span>
                   <span className="text-[0.95rem] opacity-90 leading-relaxed">
-                    <strong>Verso Apps (663 commits):</strong> Sistema de Automação de Agendas
-                    comerciais, calculadora de preços com regras complexas, dashboards analíticos
-                    e gestão de 54+ releases
+                    <strong>Verso Apps:</strong> Monorepo com 4 aplicações React, shared library
+                    com 98% de cobertura, sistema de agendas comerciais, calculadora de preços
+                    e dashboards analíticos
                   </span>
                 </li>
               </ul>

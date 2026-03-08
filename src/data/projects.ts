@@ -53,12 +53,12 @@ export const projects:projectData[] = [
         image: "https://i.imgur.com/placeholder.png",
         deploy: "",
         github: "",
-        context: "Plataformas B2B brasileiras enfrentam desafios técnicos específicos no frontend: sincronização de estado em tempo real com WebSocket, cálculos fiscais que precisam de precisão decimal (ICMS, IPI, ST), formulários multi-step com regras de negócio complexas, e dashboards que consolidam dados de múltiplas fontes. Cada plataforma tem stack e domínio próprios, exigindo adaptação constante.",
+        context: "Plataformas B2B brasileiras enfrentam desafios técnicos específicos no frontend: sincronização de estado em tempo real via WebSocket/Socket.io, cálculos fiscais que precisam de precisão decimal (ICMS, IPI, ST), formulários multi-step com regras de negócio complexas, e dashboards que consolidam dados de múltiplas fontes. Cada plataforma tem stack e domínio próprios — React, Next.js e Vue.js coexistem — exigindo adaptação constante entre paradigmas.",
         role: [
-            "Chat: arquitetura WebSocket centralizada com reconexão automática e merge inteligente que eliminou duplicatas entre API e canal em tempo real",
-            "E-commerce: motor de cálculos fiscais (ICMS, IPI, ST) com 95% de cobertura de testes e integração PIX com validação em tempo real",
+            "Chat: arquitetura WebSocket/Socket.io com reconexão automática, merge inteligente que eliminou duplicatas entre API REST e canal em tempo real, e thresholds de cobertura por arquivo crítico",
+            "E-commerce: motor de cálculos fiscais (ICMS, IPI, ST) com 95% de cobertura de testes, sistema de subcolaboradores com permissões granulares e integração PIX com validação em tempo real",
             "Admin: módulo de Comissão Dinâmica com wizard multi-step e biblioteca de componentes reutilizáveis que economizou ~500 linhas duplicadas",
-            "Automação: sistema de agendas comerciais, calculadora de preços com regras de desconto e dashboards analíticos com Recharts",
+            "Automação: monorepo com 4 aplicações React e shared library com 98% de cobertura, agendas comerciais, calculadora de preços e dashboards analíticos",
             "Transversal: gestão de 54+ releases com estabilidade em produção"
         ],
         technologies: [
