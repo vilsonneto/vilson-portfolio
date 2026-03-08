@@ -44,7 +44,7 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
           </NeonButton>
         </AnimateOnScroll>
 
-        <AnimateOnScroll animation="slideLeft" delay={200} className="w-4/5 md:w-1/2 md:max-w-[430px] h-[550px] m-auto md:m-[0] md:m-inherit relative">
+        <AnimateOnScroll animation="slideLeft" delay={200} className="w-4/5 md:w-1/2 md:max-w-[430px] h-[720px] m-auto md:m-[0] md:m-inherit relative">
           <h4 className="text-[1.5rem] font-bold mb-[0.5rem]">Ferramentas</h4>
 
           <div>
