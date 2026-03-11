@@ -83,7 +83,7 @@ export const Experience = () => {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <span className="px-3 py-1 bg-neon-cyan/20 text-neon-cyan rounded-full text-[0.85rem] border border-neon-cyan/30">
-                54+ releases gerenciadas
+                183+ releases gerenciadas
               </span>
               <span className="px-3 py-1 bg-neon-purple/20 text-neon-purple rounded-full text-[0.85rem] border border-neon-purple/30">
                 95% cobertura em cálculos fiscais

@@ -32,7 +32,7 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.258+ commits em 4 sistemas em produção."
+          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.984+ commits em 4 plataformas B2B."
         />
 
         {/* Open Graph */}
@@ -43,7 +43,7 @@ export default function Document() {
         <meta property="og:site_name" content="Vilson Padilha Portfolio" />
         <meta
           property="og:description"
-          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.258+ commits em 4 sistemas em produção."
+          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.984+ commits em 4 plataformas B2B."
         />
         <meta property="og:url" content="https://vilsonpadilha.vercel.app/" />
         <meta property="og:type" content="website" />
@@ -54,7 +54,7 @@ export default function Document() {
         <meta name="twitter:title" content="Vilson Padilha — Frontend Developer B2B" />
         <meta
           name="twitter:description"
-          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.258+ commits em produção."
+          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.984+ commits em 4 plataformas B2B."
         />
 
         <meta name="robots" content="index, follow" />
