@@ -58,7 +58,7 @@ export const Hero = () => {
             </div>
             <div className="flex flex-col">
               <AnimatedCounter
-                value={54}
+                value={183}
                 suffix="+"
                 className="text-2xl md:text-3xl font-bold text-neon-green"
               />

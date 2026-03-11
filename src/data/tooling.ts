@@ -110,6 +110,21 @@ export const tooling:toolingData[] = [
         title: "Cypress",
         type: ["Front-end"]
     },
+    {
+        id: 27,
+        title: "Vitest",
+        type: ["Front-end", "Back-end"]
+    },
+    {
+        id: 28,
+        title: "Playwright",
+        type: ["Front-end"]
+    },
+    {
+        id: 29,
+        title: "Storybook",
+        type: ["Front-end"]
+    },
     // DevOps & Ferramentas
     {
         id: 20,
@@ -118,12 +133,17 @@ export const tooling:toolingData[] = [
     },
     {
         id: 21,
-        title: "CI/CD",
+        title: "GitHub Actions",
         type: ["Back-end"]
     },
     {
         id: 22,
         title: "Git Flow",
+        type: ["Back-end"]
+    },
+    {
+        id: 30,
+        title: "Turborepo",
         type: ["Back-end"]
     },
     // Visualização
@@ -146,6 +166,11 @@ export const tooling:toolingData[] = [
     {
         id: 26,
         title: "SQL",
+        type: ["Back-end"]
+    },
+    {
+        id: 31,
+        title: "Supabase",
         type: ["Back-end"]
     },
 ]

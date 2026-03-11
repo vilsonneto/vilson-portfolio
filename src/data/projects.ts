@@ -59,7 +59,7 @@ export const projects:projectData[] = [
             "E-commerce: motor de cálculos fiscais (ICMS, IPI, ST) com 95% de cobertura de testes, sistema de subcolaboradores com permissões granulares e integração PIX com validação em tempo real",
             "Admin: módulo de Comissão Dinâmica com wizard multi-step e biblioteca de componentes reutilizáveis que economizou ~500 linhas duplicadas",
             "Automação: monorepo com 4 aplicações React e shared library com 98% de cobertura, agendas comerciais, calculadora de preços e dashboards analíticos",
-            "Transversal: gestão de 54+ releases com estabilidade em produção"
+            "Transversal: gestão de 183+ releases com estabilidade em produção"
         ],
         technologies: [
             {
@@ -83,8 +83,50 @@ export const projects:projectData[] = [
             "Eliminação de duplicatas em mensagens de chat via merge inteligente entre API e WebSocket",
             "Motor fiscal com 95% de cobertura de testes, garantindo precisão em 5 cenários tributários",
             "Economia de ~500 linhas de código duplicado através de componentização no sistema administrativo",
-            "54+ releases gerenciadas com estabilidade em produção nas 4 plataformas",
+            "183+ releases gerenciadas com estabilidade em produção nas 4 plataformas",
             "Promovido de Junior para Pleno em 6 meses pela atuação simultânea nos 4 projetos"
+        ]
+    },
+    {
+        id: 9,
+        title: "Guigo",
+        description: "Bot WhatsApp que calcula quanto um motorista de Uber pode gastar por dia, usando sistema de envelopes.",
+        resume: "Projeto pessoal que resolve problema real: pai motorista de Uber vê saldo no banco e acha que pode gastar tudo, mas a maioria já tem dono (aluguel do carro, luz, água, emergência). Bot pergunta \"quanto fez hoje?\" e responde com o valor livre após reservar cotas para cada obrigação.",
+        stack: ["TypeScript", "Next.js", "Turborepo", "Supabase", "Evolution API", "Vitest"],
+        image: "https://i.imgur.com/placeholder.png",
+        deploy: "",
+        github: "https://github.com/vilsonneto/guigo",
+        context: "Pai dirige Uber 6-7 dias por semana. Ganha ~R$370/dia bruto, mas R$225/dia já tem dono: aluguel do carro (R$800/semana), luz, água, gás, alimentação, emergência. O saldo do Nubank não mostra isso. Resultado: conta atrasada, estresse constante. O sistema de envelopes separa ANTES de gastar, dividindo cada real que entra em cotas por obrigação.",
+        role: [
+            "Entrevista real com o pai para mapear todas as obrigações financeiras e calcular cotas diárias de cada uma",
+            "Monorepo Turborepo com 3 workspaces: bot (Node.js), admin (Next.js) e shared package com lógica de envelopes",
+            "Motor de envelopes (calcularLivre) como função pura e testável que transforma receita bruta em valor livre diário",
+            "WhatsApp como interface via Evolution API — zero fricção, o pai já usa 50x por dia com passageiros",
+            "CI com GitHub Actions: lint, typecheck e testes em cada PR com quality gates"
+        ],
+        technologies: [
+            {
+                name: "TypeScript (strict) + Turborepo",
+                reason: "Monorepo com 3 workspaces e lógica de negócio compartilhada entre bot e admin"
+            },
+            {
+                name: "Supabase (PostgreSQL)",
+                reason: "Persistência de dias, obrigações e envelopes com RLS e REST API automática"
+            },
+            {
+                name: "Evolution API",
+                reason: "Integração WhatsApp self-hosted e gratuita — o sistema não pode custar dinheiro, o objetivo é economizar"
+            },
+            {
+                name: "Vitest + GitHub Actions",
+                reason: "CI com lint, typecheck e testes em cada PR — quality gates desde o commit 1"
+            }
+        ],
+        results: [
+            "Motor de envelopes funcional que transforma receita bruta em valor livre diário com cotas por obrigação",
+            "Monorepo com shared package reutilizável entre bot e admin, lógica de negócio isolada e testável",
+            "CI configurado com quality gates (lint + typecheck + testes) desde o início do projeto",
+            "Em desenvolvimento ativo — deploy previsto para junho/2026 com usuário real (o pai)"
         ]
     }
 ]

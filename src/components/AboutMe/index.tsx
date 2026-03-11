@@ -33,6 +33,9 @@ export const AboutMe = ({ setOpenContact }: IAboutMeProps) => {
             Fora do trabalho corporativo, mantenho a <strong className="text-neon-cyan">tributos-br</strong> — uma
             biblioteca npm open-source para cálculos fiscais brasileiros com precisão
             decimal arbitrária, zero dependências e 95% de cobertura de testes.
+            Também estou construindo o <strong className="text-neon-green">Guigo</strong>,
+            um bot WhatsApp que ajuda meu pai motorista de Uber a controlar finanças
+            com sistema de envelopes.
           </p>
 
           <NeonButton
