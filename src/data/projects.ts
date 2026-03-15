@@ -5,15 +5,15 @@ export const projects:projectData[] = [
         id: 7,
         title: "tributos-br",
         description: "Motor de cálculo tributário brasileiro com precisão decimal arbitrária.",
-        resume: "Biblioteca npm de produção para cálculos fiscais brasileiros (ICMS, IPI, ST, DIFAL, CBS, IBS) com aritmética de precisão arbitrária, zero dependências e audit trail em cada operação. Resolve o problema de drift de centavos que causa rejeições na SEFAZ.",
+        resume: "Biblioteca npm de produção para cálculos fiscais brasileiros (ICMS, IPI, ST, DIFAL, MVA, CBS, IBS, PIS, COFINS) com aritmética de precisão arbitrária, zero dependências e audit trail em cada operação. Resolve o problema de drift de centavos que causa rejeições na SEFAZ.",
         stack: ["TypeScript", "Vitest", "tsup", "GitHub Actions", "Changesets", "Codecov"],
         image: "https://i.imgur.com/placeholder.png",
         deploy: "https://www.npmjs.com/package/tributos-br",
         github: "https://github.com/vilsonneto/tributos-br",
-        context: "JavaScript usa IEEE 754 (ponto flutuante), causando erros silenciosos em cálculos fiscais — 1.064 × 39680 retorna 42219.520000000004 em vez de 42219.52. A SEFAZ rejeita NF-e com erros 629/630 quando há divergência de centavos. ERPs menores não implementam DIFAL base dupla (LC 190/2022) nem FECOP na MVA ajustada, gerando diferenças reais de ~4pp em estados como RJ, MG e CE.",
+        context: "JavaScript usa IEEE 754 (ponto flutuante), causando erros silenciosos em cálculos fiscais — 1.064 × 39680 retorna 42219.520000000004 em vez de 42219.52. A SEFAZ rejeita NF-e com erros 629/630 quando há divergência de centavos. ERPs menores não implementam os 3 modos de DIFAL (base única, base dupla LC 190/2022 e base reduzida CST 20) nem FECOP na MVA ajustada, gerando diferenças reais de ~4pp em estados como RJ, MG e CE.",
         role: [
             "Projetei e implementei motor de aritmética decimal em strings, sem nunca passar por IEEE 754",
-            "Desenvolvi 7 calculadoras tributárias cobrindo ICMS, IPI, ST (5 cenários), DIFAL, MVA ajustada, CBS e IBS",
+            "Desenvolvi 9 calculadoras tributárias cobrindo ICMS, IPI, ST (5 cenários), DIFAL, MVA ajustada, CBS, IBS, PIS e COFINS",
             "Implementei audit trail automático — cada cálculo retorna histórico completo de etapas com fórmula e valor",
             "Configurei CI/CD com GitHub Actions (matrix Node 20/22/24), Codecov e release automático via Changesets",
             "Publiquei no npm com dual entry-point (ESM + CJS) e provenance verificável"
@@ -29,7 +29,7 @@ export const projects:projectData[] = [
             },
             {
                 name: "Vitest + 95% coverage",
-                reason: "265+ testes com threshold enforçado — erros em cálculos fiscais significam prejuízo financeiro"
+                reason: "362+ testes com threshold enforçado — erros em cálculos fiscais significam prejuízo financeiro"
             },
             {
                 name: "tsup (ESM + CJS)",
@@ -38,8 +38,8 @@ export const projects:projectData[] = [
         ],
         results: [
             "Biblioteca publicada no npm com zero dependências e precisão decimal arbitrária",
-            "7 calculadoras cobrindo os principais tributos brasileiros incluindo reforma tributária (CBS/IBS)",
-            "265+ testes com 95% de cobertura enforçada em statements, branches, functions e lines",
+            "9 calculadoras cobrindo os principais tributos brasileiros incluindo reforma tributária (CBS/IBS) e PIS/COFINS",
+            "362+ testes com 95% de cobertura enforçada em statements, branches, functions e lines",
             "Audit trail em cada operação permite rastrear exatamente onde divergências ocorrem",
             "CI com matrix testing (Node 20/22/24) garante compatibilidade em todas as versões LTS"
         ]
@@ -47,13 +47,13 @@ export const projects:projectData[] = [
     {
         id: 8,
         title: "VersoTech — Plataformas B2B",
-        description: "4 plataformas corporativas: chat em tempo real, e-commerce fiscal, admin e automação comercial.",
-        resume: "Atuação como referência técnica frontend em 4 plataformas B2B simultâneas: chat com comunicação em tempo real, e-commerce com cálculos tributários, sistema administrativo com comissões dinâmicas e suite de automação comercial com dashboards analíticos.",
+        description: "5 plataformas corporativas: e-commerce fiscal, chat em tempo real, call center, SAC e sistema administrativo.",
+        resume: "Atuação como referência técnica frontend em 5 plataformas B2B simultâneas: e-commerce com cálculos tributários, chat com comunicação em tempo real, call center, SAC e sistema administrativo com comissões dinâmicas e dashboards analíticos.",
         stack: ["Next.js", "React", "TypeScript", "Vue.js", "Redux Toolkit", "WebSocket", "Jest", "Recharts"],
         image: "https://i.imgur.com/placeholder.png",
         deploy: "",
         github: "",
-        context: "Plataformas B2B brasileiras enfrentam desafios técnicos específicos no frontend: sincronização de estado em tempo real via WebSocket/Socket.io, cálculos fiscais que precisam de precisão decimal (ICMS, IPI, ST), formulários multi-step com regras de negócio complexas, e dashboards que consolidam dados de múltiplas fontes. Cada plataforma tem stack e domínio próprios — React, Next.js e Vue.js coexistem — exigindo adaptação constante entre paradigmas.",
+        context: "Plataformas B2B brasileiras enfrentam desafios técnicos específicos no frontend: sincronização de estado em tempo real via WebSocket/Socket.io, cálculos fiscais que precisam de precisão decimal (ICMS, IPI, ST), formulários multi-step com regras de negócio complexas, e dashboards que consolidam dados de múltiplas fontes. São 5 plataformas com stack e domínio próprios — React, Next.js e Vue.js coexistem — exigindo adaptação constante entre paradigmas.",
         role: [
             "Chat: arquitetura WebSocket/Socket.io com reconexão automática, merge inteligente que eliminou duplicatas entre API REST e canal em tempo real, e thresholds de cobertura por arquivo crítico",
             "E-commerce: motor de cálculos fiscais (ICMS, IPI, ST) com 95% de cobertura de testes, sistema de subcolaboradores com permissões granulares e integração PIX com validação em tempo real",
@@ -84,7 +84,7 @@ export const projects:projectData[] = [
             "Motor fiscal com 95% de cobertura de testes, garantindo precisão em 5 cenários tributários",
             "Economia de ~500 linhas de código duplicado através de componentização no sistema administrativo",
             "183+ releases gerenciadas com estabilidade em produção nas 4 plataformas",
-            "Promovido de Junior para Pleno em 6 meses pela atuação simultânea nos 4 projetos"
+            "Promovido de Junior para Pleno em 6 meses pela atuação simultânea nas 5 plataformas"
         ]
     },
     {
@@ -95,7 +95,7 @@ export const projects:projectData[] = [
         stack: ["TypeScript", "Next.js", "Turborepo", "Supabase", "Evolution API", "Vitest"],
         image: "https://i.imgur.com/placeholder.png",
         deploy: "",
-        github: "https://github.com/vilsonneto/guigo",
+        github: "",
         context: "Pai dirige Uber 6-7 dias por semana. Ganha ~R$370/dia bruto, mas R$225/dia já tem dono: aluguel do carro (R$800/semana), luz, água, gás, alimentação, emergência. O saldo do Nubank não mostra isso. Resultado: conta atrasada, estresse constante. O sistema de envelopes separa ANTES de gastar, dividindo cada real que entra em cotas por obrigação.",
         role: [
             "Entrevista real com o pai para mapear todas as obrigações financeiras e calcular cotas diárias de cada uma",
