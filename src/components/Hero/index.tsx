@@ -26,7 +26,7 @@ export const Hero = () => {
           <div className="w-full mb-4 font-mono text-neon-cyan text-sm md:text-base">
             <span className="text-neon-green">{'>'}</span>{' '}
             <TypingText
-              text="Frontend Developer // B2B Specialist // Real-time Applications"
+              text="Frontend Developer // React · Next.js · TypeScript // Autor de lib npm fiscal (tributos-br)"
               speed={40}
               delay={500}
             />
