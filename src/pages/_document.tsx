@@ -23,39 +23,43 @@ export default function Document() {
           });
     `}
         </Script>
-        <title>Vilson Padilha — Frontend Developer B2B</title>
+        <title>Vilson Padilha — Frontend Developer | React · Next.js · TypeScript | tributos-br</title>
         <meta
           name="keywords"
-          content="Frontend Developer, React, TypeScript, Next.js, WebSocket, B2B, JavaScript, Node.js, Tailwind CSS, Vilson Padilha"
+          content="Frontend Developer, React, TypeScript, Next.js, WebSocket, B2B, JavaScript, Node.js, Tailwind CSS, Vilson Padilha, tributos-br, cálculo fiscal, npm"
         />
         <meta name="author" content="Vilson Padilha" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.984+ commits em 4 plataformas B2B."
+          content="Frontend Developer em 5 plataformas B2B. Autor do tributos-br (lib npm de cálculo fiscal, 9 calculadoras, zero deps). Ex-instrutor de 300+ devs."
         />
 
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="Vilson Padilha — Frontend Developer B2B"
+          content="Vilson Padilha — Frontend Developer | Autor do tributos-br"
         />
-        <meta property="og:site_name" content="Vilson Padilha Portfolio" />
+        <meta property="og:site_name" content="Vilson Padilha" />
         <meta
           property="og:description"
-          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.984+ commits em 4 plataformas B2B."
+          content="Frontend Developer em 5 plataformas B2B. Autor do tributos-br (lib npm de cálculo fiscal, 9 calculadoras, zero deps). Ex-instrutor de 300+ devs."
         />
         <meta property="og:url" content="https://vilsonpadilha.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:image" content="https://vilsonpadilha.vercel.app/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Vilson Padilha — Frontend Developer B2B" />
+        <meta name="twitter:title" content="Vilson Padilha — Frontend Developer | Autor do tributos-br" />
         <meta
           name="twitter:description"
-          content="Frontend Developer especializado em aplicações B2B de alta complexidade. Arquitetura WebSocket, estado em tempo real e 1.984+ commits em 4 plataformas B2B."
+          content="Frontend Developer em 5 plataformas B2B. Autor do tributos-br (lib npm de cálculo fiscal, 9 calculadoras, zero deps). Ex-instrutor de 300+ devs."
         />
+        <meta name="twitter:image" content="https://vilsonpadilha.vercel.app/og-image.png" />
 
         <meta name="robots" content="index, follow" />
         <meta name="language" content="Portuguese" />
